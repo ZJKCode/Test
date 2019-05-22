@@ -12,6 +12,7 @@
 
 #import <iToast/UIView+iToast.h>
 #import <iToast/Instancefactory.h>
+#import <WCSDK/WCSDK.h>
 
 @interface TestViewController ()
 
@@ -58,6 +59,17 @@
 //    [self.view makeToast:@"what fucking the code"];
 //    [self.view makeToast:@"the position is top" duration:10 position:CSToastPositionTop];
     [self.view makeToast:@"the position is center" duration:10 position:CSToastPositionCenter];
+
+    WCSDKUser *user =  [[WCSDKUser alloc] init];
+    user.nickname = @"wanghiakl";
+
+    NSLog(@"nickName%@", user.nickname);
+
+    NSDictionary *dic = @{@"url":@"www.baidu.com",@"nickName":@"小百度"};
+
+    WCSDKUser *mode2 = [[WCSDKUser alloc] initWithDict:dic];
+
+    NSLog(@"mode2 %@",mode2.url);
 
 }
 
