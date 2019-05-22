@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0306FD1F226D8CFF004B0198 /* StartTask.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0306FD1E226D8CFF004B0198 /* StartTask.plist */; };
+		0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD26226D8F14004B0198 /* WCAbstractTask.m */; };
+		0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD29226D92EB004B0198 /* WCTaskExecutor.m */; };
 		030C80BD220304EC00308399 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C80BC220304EC00308399 /* TemplateViewController.m */; };
 		0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310B1A0221AC069003BCA03 /* TestViewController.m */; };
 		0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8B219D668E002621A8 /* AppDelegate.m */; };
@@ -15,13 +18,21 @@
 		0321AE94219D6693002621A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321AE93219D6693002621A8 /* Assets.xcassets */; };
 		0321AE97219D6693002621A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0321AE95219D6693002621A8 /* LaunchScreen.storyboard */; };
 		0321AE9A219D6693002621A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE99219D6693002621A8 /* main.m */; };
+		0325943C229402990063F390 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0325943B229402990063F390 /* LoginViewController.m */; };
 		0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334F68D22117B5300CD89FB /* RandomMoney.m */; };
+		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
+		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03884AB92223E2ED0000E9C4 /* ProductA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884AB82223E2ED0000E9C4 /* ProductA.m */; };
 		03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABB2223E2F70000E9C4 /* ProductB.m */; };
 		03884ABF2223E6050000E9C4 /* GCDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABE2223E6050000E9C4 /* GCDAction.m */; };
 		03B7C82022019CBA004E08E5 /* HittestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7C81F22019CBA004E08E5 /* HittestView.m */; };
 		03C6508F22017191009D4EEC /* WCWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6508E22017191009D4EEC /* WCWKViewController.m */; };
-		03E6077A22129BDD009D1FEE /* Learn-Algorithms in Resources */ = {isa = PBXBuildFile; fileRef = 03E6077922129BDD009D1FEE /* Learn-Algorithms */; };
+		03EF8061225DE2AC005EB4DE /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8060225DE2AC005EB4DE /* A.m */; };
+		03EF8064225DE2B4005EB4DE /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8063225DE2B4005EB4DE /* B.m */; };
+		03EF8067225DE2BB005EB4DE /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8066225DE2BB005EB4DE /* C.m */; };
+		03EF80A22264565D005EB4DE /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A12264565D005EB4DE /* Node.m */; };
+		03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A422645CE5005EB4DE /* DirectInsertSort.m */; };
+		03EF80A92266C10A005EB4DE /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A82266C10A005EB4DE /* CustomView.m */; };
 		03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDC721FE9D4100D03703 /* Calculator.m */; };
 		03F2EDCB21FEAC1300D03703 /* WCStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDCA21FEAC1300D03703 /* WCStream.m */; };
 		03F2EDD221FED89900D03703 /* WCBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDD121FED89900D03703 /* WCBuilder.m */; };
@@ -55,7 +66,25 @@
 		03FD1EAC223271F700CC2DE2 /* OperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD1EAB223271F700CC2DE2 /* OperationAction.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		03862E072294DC5400CE815A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0306FD1E226D8CFF004B0198 /* StartTask.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StartTask.plist; sourceTree = "<group>"; };
+		0306FD25226D8F14004B0198 /* WCAbstractTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAbstractTask.h; sourceTree = "<group>"; };
+		0306FD26226D8F14004B0198 /* WCAbstractTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAbstractTask.m; sourceTree = "<group>"; };
+		0306FD28226D92EB004B0198 /* WCTaskExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCTaskExecutor.h; sourceTree = "<group>"; };
+		0306FD29226D92EB004B0198 /* WCTaskExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCTaskExecutor.m; sourceTree = "<group>"; };
 		030C80BB220304EC00308399 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
 		030C80BC220304EC00308399 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
 		0310B19F221AC069003BCA03 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -70,8 +99,11 @@
 		0321AE96219D6693002621A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0321AE98219D6693002621A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0321AE99219D6693002621A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0325943A229402990063F390 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0325943B229402990063F390 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0334F68C22117B5300CD89FB /* RandomMoney.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomMoney.h; sourceTree = "<group>"; };
 		0334F68D22117B5300CD89FB /* RandomMoney.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomMoney.m; sourceTree = "<group>"; };
+		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03884AB72223E2ED0000E9C4 /* ProductA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductA.h; sourceTree = "<group>"; };
 		03884AB82223E2ED0000E9C4 /* ProductA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductA.m; sourceTree = "<group>"; };
 		03884ABA2223E2F70000E9C4 /* ProductB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductB.h; sourceTree = "<group>"; };
@@ -82,7 +114,18 @@
 		03B7C81F22019CBA004E08E5 /* HittestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HittestView.m; sourceTree = "<group>"; };
 		03C6508D22017191009D4EEC /* WCWKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCWKViewController.h; sourceTree = "<group>"; };
 		03C6508E22017191009D4EEC /* WCWKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCWKViewController.m; sourceTree = "<group>"; };
-		03E6077922129BDD009D1FEE /* Learn-Algorithms */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Learn-Algorithms"; sourceTree = "<group>"; };
+		03EF805F225DE2AC005EB4DE /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		03EF8060225DE2AC005EB4DE /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		03EF8062225DE2B4005EB4DE /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		03EF8063225DE2B4005EB4DE /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
+		03EF8065225DE2BB005EB4DE /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		03EF8066225DE2BB005EB4DE /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		03EF80A02264565D005EB4DE /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		03EF80A12264565D005EB4DE /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		03EF80A322645CE5005EB4DE /* DirectInsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectInsertSort.h; sourceTree = "<group>"; };
+		03EF80A422645CE5005EB4DE /* DirectInsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectInsertSort.m; sourceTree = "<group>"; };
+		03EF80A72266C10A005EB4DE /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		03EF80A82266C10A005EB4DE /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		03F2EDC621FE9D4100D03703 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		03F2EDC721FE9D4100D03703 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		03F2EDC921FEAC1300D03703 /* WCStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCStream.h; sourceTree = "<group>"; };
@@ -157,17 +200,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03862E062294DBCD00CE815A /* iToast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0306FD20226D8E5C004B0198 /* TaskModule */ = {
+			isa = PBXGroup;
+			children = (
+				0306FD24226D8EE8004B0198 /* TaskImpl */,
+				0306FD23226D8EB5004B0198 /* TaskFactory */,
+				0306FD21226D8E82004B0198 /* TaskExecutor */,
+			);
+			path = TaskModule;
+			sourceTree = "<group>";
+		};
+		0306FD21226D8E82004B0198 /* TaskExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				0306FD28226D92EB004B0198 /* WCTaskExecutor.h */,
+				0306FD29226D92EB004B0198 /* WCTaskExecutor.m */,
+			);
+			path = TaskExecutor;
+			sourceTree = "<group>";
+		};
+		0306FD23226D8EB5004B0198 /* TaskFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0306FD25226D8F14004B0198 /* WCAbstractTask.h */,
+				0306FD26226D8F14004B0198 /* WCAbstractTask.m */,
+			);
+			path = TaskFactory;
+			sourceTree = "<group>";
+		};
+		0306FD24226D8EE8004B0198 /* TaskImpl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TaskImpl;
+			sourceTree = "<group>";
+		};
 		0321AE7E219D668E002621A8 = {
 			isa = PBXGroup;
 			children = (
 				0321AE89219D668E002621A8 /* TEST */,
 				0321AE88219D668E002621A8 /* Products */,
+				03862E052294DBCD00CE815A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,13 +262,27 @@
 		0321AE89219D668E002621A8 /* TEST */ = {
 			isa = PBXGroup;
 			children = (
-				03E6077922129BDD009D1FEE /* Learn-Algorithms */,
+				0306FD20226D8E5C004B0198 /* TaskModule */,
 				0321AE8A219D668E002621A8 /* AppDelegate.h */,
 				0321AE8B219D668E002621A8 /* AppDelegate.m */,
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
 				0310B19F221AC069003BCA03 /* TestViewController.h */,
 				0310B1A0221AC069003BCA03 /* TestViewController.m */,
+				0325943A229402990063F390 /* LoginViewController.h */,
+				0325943B229402990063F390 /* LoginViewController.m */,
+				03EF80A72266C10A005EB4DE /* CustomView.h */,
+				03EF80A82266C10A005EB4DE /* CustomView.m */,
+				03EF805F225DE2AC005EB4DE /* A.h */,
+				03EF8060225DE2AC005EB4DE /* A.m */,
+				03EF8062225DE2B4005EB4DE /* B.h */,
+				03EF8063225DE2B4005EB4DE /* B.m */,
+				03EF8065225DE2BB005EB4DE /* C.h */,
+				03EF8066225DE2BB005EB4DE /* C.m */,
+				03EF80A02264565D005EB4DE /* Node.h */,
+				03EF80A12264565D005EB4DE /* Node.m */,
+				03EF80A322645CE5005EB4DE /* DirectInsertSort.h */,
+				03EF80A422645CE5005EB4DE /* DirectInsertSort.m */,
 				03884ABD2223E6050000E9C4 /* GCDAction.h */,
 				03884ABE2223E6050000E9C4 /* GCDAction.m */,
 				03FD1EAA223271F700CC2DE2 /* OperationAction.h */,
@@ -275,8 +369,17 @@
 				0321AE95219D6693002621A8 /* LaunchScreen.storyboard */,
 				0321AE98219D6693002621A8 /* Info.plist */,
 				0321AE99219D6693002621A8 /* main.m */,
+				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
+				03862E032294DB6700CE815A /* iToast.framework */,
 			);
 			path = TEST;
+			sourceTree = "<group>";
+		};
+		03862E052294DBCD00CE815A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +392,7 @@
 				0321AE83219D668E002621A8 /* Sources */,
 				0321AE84219D668E002621A8 /* Frameworks */,
 				0321AE85219D668E002621A8 /* Resources */,
+				03862E072294DC5400CE815A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -337,8 +441,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0321AE97219D6693002621A8 /* LaunchScreen.storyboard in Resources */,
-				03E6077A22129BDD009D1FEE /* Learn-Algorithms in Resources */,
 				0321AE94219D6693002621A8 /* Assets.xcassets in Resources */,
+				0306FD1F226D8CFF004B0198 /* StartTask.plist in Resources */,
 				0321AE92219D668E002621A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +464,7 @@
 				0321AE8F219D668E002621A8 /* ViewController.m in Sources */,
 				03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */,
 				03F2EE2321FFF89E00D03703 /* Builder.m in Sources */,
+				03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */,
 				0321AE9A219D6693002621A8 /* main.m in Sources */,
 				03F2EDDB21FED8CF00D03703 /* WCBridge.m in Sources */,
 				03F2EDE221FEE46E00D03703 /* OrderAllViewController.m in Sources */,
@@ -368,22 +473,30 @@
 				03FD1EAC223271F700CC2DE2 /* OperationAction.m in Sources */,
 				03F2EE0721FF042000D03703 /* SangTaNaCar.m in Sources */,
 				03F2EE1121FF096F00D03703 /* Gasoline93.m in Sources */,
+				03EF8061225DE2AC005EB4DE /* A.m in Sources */,
 				03884ABF2223E6050000E9C4 /* GCDAction.m in Sources */,
 				03F2EDF521FEE5B500D03703 /* AliPayProcessor.m in Sources */,
 				03F2EDFE21FEF0F600D03703 /* Car.m in Sources */,
 				03F2EDFB21FEE5ED00D03703 /* PaySendModel.m in Sources */,
+				0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */,
 				03F2EDE821FEE49200D03703 /* OrderCancelViewController.m in Sources */,
 				0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */,
 				03F2EE0121FEF20F00D03703 /* BaoMaCar.m in Sources */,
 				03F2EE1A21FFF5C400D03703 /* AbstractFactory.m in Sources */,
 				03F2EDD221FED89900D03703 /* WCBuilder.m in Sources */,
+				03EF80A92266C10A005EB4DE /* CustomView.m in Sources */,
+				03EF8067225DE2BB005EB4DE /* C.m in Sources */,
 				03C6508F22017191009D4EEC /* WCWKViewController.m in Sources */,
 				03F2EDEB21FEE4A400D03703 /* OrderDeliverViewController.m in Sources */,
 				03F2EDF821FEE5CA00D03703 /* WechatPayProcessor.m in Sources */,
 				030C80BD220304EC00308399 /* TemplateViewController.m in Sources */,
 				03F2EE2921FFF8B000D03703 /* Product.m in Sources */,
+				0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */,
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
+				03EF80A22264565D005EB4DE /* Node.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
+				0325943C229402990063F390 /* LoginViewController.m in Sources */,
+				03EF8064225DE2B4005EB4DE /* B.m in Sources */,
 				03F2EDD821FED8BE00D03703 /* WCCharator.m in Sources */,
 				03F2EDDF21FEE45F00D03703 /* OrderManagerViewController.m in Sources */,
 				03F2EE1421FF110600D03703 /* Person.m in Sources */,
@@ -535,6 +648,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WW69WRWC7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TEST",
+				);
 				INFOPLIST_FILE = TEST/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +669,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WW69WRWC7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TEST",
+				);
 				INFOPLIST_FILE = TEST/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

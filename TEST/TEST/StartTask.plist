@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>systemTaskItems</key>
+	<array>
+		<dict>
+			<key>taskName</key>
+			<string></string>
+			<key>taskOrder</key>
+			<integer>1</integer>
+			<key>taskSynType</key>
+			<string>0</string>
+			<key>taskType</key>
+			<string>0</string>
+			<key>taskReturnType</key>
+			<string>0</string>
+			<key>dependonTaskResult</key>
+			<string></string>
+			<key>needParam</key>
+			<true/>
+			<key>multiparam</key>
+			<false/>
+			<key>constructor</key>
+			<string>initWithAppId:</string>
+			<key>task_desc</key>
+			<string></string>
+			<key>initParam</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

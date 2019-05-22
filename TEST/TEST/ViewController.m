@@ -72,8 +72,12 @@ __weak NSString *string_weak_ = nil;
     [self.view addSubview:button];
 
 
-
-
+    NSLocalizedStringFromTableInBundle(@"",
+                                       @"Localizable",
+                                       [NSBundle bundleWithPath:
+                                        [[NSBundle mainBundle] pathForResource:@"WCReturns"
+                                                                        ofType:@"bundle"]],nil);
+    [self directInsertSort];
 }
 - (void)tap2 {
 //    [self weChatRedEnvelopeWithTotalMoney:50000 totalPeople:15 minMoney:10];
@@ -186,6 +190,16 @@ __weak NSString *string_weak_ = nil;
     NSLog(@"string: %@",string_weak_);
 }
 
+- (void) directInsertSort {
+    // 直接插入排序
+    NSArray *list = @[@49, @38, @65, @97, @76, @13, @27, @49, @78, @34, @12, @64, @1];
+    NSLog(@"排序之前");
+    for (int i = 0; i < list.count; i ++) {
+        NSLog(@"%@ \n",list[i]);
+    }
+
+
+}
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     NSLog(@"string: %@",string_weak_);
