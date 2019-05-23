@@ -26,8 +26,9 @@ __weak NSString *string_weak_ = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self case3];
 
+    [self case3];
+    // 链式编程
     Calculator *cal = [[Calculator alloc] init];
     cal.result = 0.0;
     cal.add(3).sub(1).add(9);

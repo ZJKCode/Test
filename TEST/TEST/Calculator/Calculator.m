@@ -9,6 +9,7 @@
 #import "Calculator.h"
 
 @implementation Calculator
+
 - (Calculator * (^)(CGFloat num))add {
     return ^id(CGFloat num) {
         self.result += num;
@@ -22,16 +23,19 @@
         return self;
     };
 }
+
 - (Calculator * (^)(CGFloat num))mutil {
     return ^id(CGFloat num) {
         self.result *= num;
         return self;
     };
 }
+
 - (Calculator * (^)(CGFloat num))divided {
     return ^id(CGFloat num) {
         self.result /= num;
         return self;
     };
 }
+
 @end

@@ -10,7 +10,6 @@
 		0306FD1F226D8CFF004B0198 /* StartTask.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0306FD1E226D8CFF004B0198 /* StartTask.plist */; };
 		0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD26226D8F14004B0198 /* WCAbstractTask.m */; };
 		0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD29226D92EB004B0198 /* WCTaskExecutor.m */; };
-		030C80BD220304EC00308399 /* TemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C80BC220304EC00308399 /* TemplateViewController.m */; };
 		0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310B1A0221AC069003BCA03 /* TestViewController.m */; };
 		0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8B219D668E002621A8 /* AppDelegate.m */; };
 		0321AE8F219D668E002621A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8E219D668E002621A8 /* ViewController.m */; };
@@ -30,14 +29,17 @@
 		03862E252294EB9700CE815A /* IWCDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03862E242294EB9700CE815A /* IWCDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03862E282294EBBF00CE815A /* WCDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03862E262294EBBF00CE815A /* WCDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03862E292294EBBF00CE815A /* WCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E272294EBBF00CE815A /* WCDataModel.m */; };
+		03862E3D2296750600CE815A /* GloableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3C2296750600CE815A /* GloableOperation.m */; };
+		03862E4022967ACD00CE815A /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3F22967ACD00CE815A /* CustomOperation.m */; };
+		03862E462296883A00CE815A /* UIView+CBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E422296883A00CE815A /* UIView+CBExtension.m */; };
+		03862E472296883A00CE815A /* CBGroupAndStreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E452296883A00CE815A /* CBGroupAndStreamView.m */; };
+		03862E4C22968F7200CE815A /* GCDOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E4B22968F7200CE815A /* GCDOperation.m */; };
+		03862E512296963E00CE815A /* CoreAnimationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E502296963E00CE815A /* CoreAnimationOperation.m */; };
+		03862E54229696C500CE815A /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E53229696C500CE815A /* CoreAnimationViewController.m */; };
 		03884AB92223E2ED0000E9C4 /* ProductA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884AB82223E2ED0000E9C4 /* ProductA.m */; };
 		03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABB2223E2F70000E9C4 /* ProductB.m */; };
 		03884ABF2223E6050000E9C4 /* GCDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABE2223E6050000E9C4 /* GCDAction.m */; };
 		03B7C82022019CBA004E08E5 /* HittestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7C81F22019CBA004E08E5 /* HittestView.m */; };
-		03C6508F22017191009D4EEC /* WCWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6508E22017191009D4EEC /* WCWKViewController.m */; };
-		03EF8061225DE2AC005EB4DE /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8060225DE2AC005EB4DE /* A.m */; };
-		03EF8064225DE2B4005EB4DE /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8063225DE2B4005EB4DE /* B.m */; };
-		03EF8067225DE2BB005EB4DE /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF8066225DE2BB005EB4DE /* C.m */; };
 		03EF80A22264565D005EB4DE /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A12264565D005EB4DE /* Node.m */; };
 		03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A422645CE5005EB4DE /* DirectInsertSort.m */; };
 		03EF80A92266C10A005EB4DE /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A82266C10A005EB4DE /* CustomView.m */; };
@@ -47,12 +49,6 @@
 		03F2EDD521FED8A300D03703 /* WCDirect.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDD421FED8A300D03703 /* WCDirect.m */; };
 		03F2EDD821FED8BE00D03703 /* WCCharator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDD721FED8BE00D03703 /* WCCharator.m */; };
 		03F2EDDB21FED8CF00D03703 /* WCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDDA21FED8CF00D03703 /* WCBridge.m */; };
-		03F2EDDF21FEE45F00D03703 /* OrderManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDDE21FEE45F00D03703 /* OrderManagerViewController.m */; };
-		03F2EDE221FEE46E00D03703 /* OrderAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDE121FEE46E00D03703 /* OrderAllViewController.m */; };
-		03F2EDE521FEE48600D03703 /* OrderWaitConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDE421FEE48600D03703 /* OrderWaitConfirmViewController.m */; };
-		03F2EDE821FEE49200D03703 /* OrderCancelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDE721FEE49200D03703 /* OrderCancelViewController.m */; };
-		03F2EDEB21FEE4A400D03703 /* OrderDeliverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDEA21FEE4A400D03703 /* OrderDeliverViewController.m */; };
-		03F2EDEE21FEE4AE00D03703 /* OrderFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDED21FEE4AE00D03703 /* OrderFinishViewController.m */; };
 		03F2EDF121FEE56C00D03703 /* PayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDF021FEE56C00D03703 /* PayHelper.m */; };
 		03F2EDF521FEE5B500D03703 /* AliPayProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDF421FEE5B500D03703 /* AliPayProcessor.m */; };
 		03F2EDF821FEE5CA00D03703 /* WechatPayProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDF721FEE5CA00D03703 /* WechatPayProcessor.m */; };
@@ -104,8 +100,6 @@
 		0306FD26226D8F14004B0198 /* WCAbstractTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAbstractTask.m; sourceTree = "<group>"; };
 		0306FD28226D92EB004B0198 /* WCTaskExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCTaskExecutor.h; sourceTree = "<group>"; };
 		0306FD29226D92EB004B0198 /* WCTaskExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCTaskExecutor.m; sourceTree = "<group>"; };
-		030C80BB220304EC00308399 /* TemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateViewController.h; sourceTree = "<group>"; };
-		030C80BC220304EC00308399 /* TemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateViewController.m; sourceTree = "<group>"; };
 		0310B19F221AC069003BCA03 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0310B1A0221AC069003BCA03 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0321AE87219D668E002621A8 /* TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +125,22 @@
 		03862E242294EB9700CE815A /* IWCDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWCDataModel.h; sourceTree = "<group>"; };
 		03862E262294EBBF00CE815A /* WCDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDataModel.h; sourceTree = "<group>"; };
 		03862E272294EBBF00CE815A /* WCDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCDataModel.m; sourceTree = "<group>"; };
+		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
+		03862E3C2296750600CE815A /* GloableOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GloableOperation.m; sourceTree = "<group>"; };
+		03862E3E22967ACD00CE815A /* CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
+		03862E3F22967ACD00CE815A /* CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
+		03862E422296883A00CE815A /* UIView+CBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CBExtension.m"; sourceTree = "<group>"; };
+		03862E432296883A00CE815A /* CBGroupAndStreamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBGroupAndStreamView.h; sourceTree = "<group>"; };
+		03862E442296883A00CE815A /* UIView+CBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CBExtension.h"; sourceTree = "<group>"; };
+		03862E452296883A00CE815A /* CBGroupAndStreamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBGroupAndStreamView.m; sourceTree = "<group>"; };
+		03862E4A22968F7200CE815A /* GCDOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDOperation.h; sourceTree = "<group>"; };
+		03862E4B22968F7200CE815A /* GCDOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDOperation.m; sourceTree = "<group>"; };
+		03862E4D2296900400CE815A /* OperationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationProtocol.h; sourceTree = "<group>"; };
+		03862E4F2296963E00CE815A /* CoreAnimationOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationOperation.h; sourceTree = "<group>"; };
+		03862E502296963E00CE815A /* CoreAnimationOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationOperation.m; sourceTree = "<group>"; };
+		03862E52229696C500CE815A /* CoreAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
+		03862E53229696C500CE815A /* CoreAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
+		03862E5522969BA700CE815A /* GloableMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableMacro.h; sourceTree = "<group>"; };
 		03884AB72223E2ED0000E9C4 /* ProductA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductA.h; sourceTree = "<group>"; };
 		03884AB82223E2ED0000E9C4 /* ProductA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductA.m; sourceTree = "<group>"; };
 		03884ABA2223E2F70000E9C4 /* ProductB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductB.h; sourceTree = "<group>"; };
@@ -139,14 +149,6 @@
 		03884ABE2223E6050000E9C4 /* GCDAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAction.m; sourceTree = "<group>"; };
 		03B7C81E22019CBA004E08E5 /* HittestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HittestView.h; sourceTree = "<group>"; };
 		03B7C81F22019CBA004E08E5 /* HittestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HittestView.m; sourceTree = "<group>"; };
-		03C6508D22017191009D4EEC /* WCWKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCWKViewController.h; sourceTree = "<group>"; };
-		03C6508E22017191009D4EEC /* WCWKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCWKViewController.m; sourceTree = "<group>"; };
-		03EF805F225DE2AC005EB4DE /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
-		03EF8060225DE2AC005EB4DE /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
-		03EF8062225DE2B4005EB4DE /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
-		03EF8063225DE2B4005EB4DE /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
-		03EF8065225DE2BB005EB4DE /* C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
-		03EF8066225DE2BB005EB4DE /* C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
 		03EF80A02264565D005EB4DE /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		03EF80A12264565D005EB4DE /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		03EF80A322645CE5005EB4DE /* DirectInsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectInsertSort.h; sourceTree = "<group>"; };
@@ -165,18 +167,6 @@
 		03F2EDD721FED8BE00D03703 /* WCCharator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCCharator.m; sourceTree = "<group>"; };
 		03F2EDD921FED8CF00D03703 /* WCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCBridge.h; sourceTree = "<group>"; };
 		03F2EDDA21FED8CF00D03703 /* WCBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCBridge.m; sourceTree = "<group>"; };
-		03F2EDDD21FEE45F00D03703 /* OrderManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderManagerViewController.h; sourceTree = "<group>"; };
-		03F2EDDE21FEE45F00D03703 /* OrderManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderManagerViewController.m; sourceTree = "<group>"; };
-		03F2EDE021FEE46E00D03703 /* OrderAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderAllViewController.h; sourceTree = "<group>"; };
-		03F2EDE121FEE46E00D03703 /* OrderAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderAllViewController.m; sourceTree = "<group>"; };
-		03F2EDE321FEE48600D03703 /* OrderWaitConfirmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderWaitConfirmViewController.h; sourceTree = "<group>"; };
-		03F2EDE421FEE48600D03703 /* OrderWaitConfirmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderWaitConfirmViewController.m; sourceTree = "<group>"; };
-		03F2EDE621FEE49200D03703 /* OrderCancelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCancelViewController.h; sourceTree = "<group>"; };
-		03F2EDE721FEE49200D03703 /* OrderCancelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCancelViewController.m; sourceTree = "<group>"; };
-		03F2EDE921FEE4A400D03703 /* OrderDeliverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDeliverViewController.h; sourceTree = "<group>"; };
-		03F2EDEA21FEE4A400D03703 /* OrderDeliverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderDeliverViewController.m; sourceTree = "<group>"; };
-		03F2EDEC21FEE4AE00D03703 /* OrderFinishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderFinishViewController.h; sourceTree = "<group>"; };
-		03F2EDED21FEE4AE00D03703 /* OrderFinishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderFinishViewController.m; sourceTree = "<group>"; };
 		03F2EDEF21FEE56C00D03703 /* PayHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayHelper.h; sourceTree = "<group>"; };
 		03F2EDF021FEE56C00D03703 /* PayHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayHelper.m; sourceTree = "<group>"; };
 		03F2EDF221FEE59200D03703 /* PayProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayProcessor.h; sourceTree = "<group>"; };
@@ -299,9 +289,9 @@
 		0321AE89219D668E002621A8 /* TEST */ = {
 			isa = PBXGroup;
 			children = (
+				03862E412296883A00CE815A /* CBGroupWatherLab */,
 				0306FD20226D8E5C004B0198 /* TaskModule */,
-				0321AE8A219D668E002621A8 /* AppDelegate.h */,
-				0321AE8B219D668E002621A8 /* AppDelegate.m */,
+				03862E3A22966E3D00CE815A /* AppDelegate */,
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
 				0310B19F221AC069003BCA03 /* TestViewController.h */,
@@ -310,26 +300,18 @@
 				0325943B229402990063F390 /* LoginViewController.m */,
 				03EF80A72266C10A005EB4DE /* CustomView.h */,
 				03EF80A82266C10A005EB4DE /* CustomView.m */,
-				03EF805F225DE2AC005EB4DE /* A.h */,
-				03EF8060225DE2AC005EB4DE /* A.m */,
-				03EF8062225DE2B4005EB4DE /* B.h */,
-				03EF8063225DE2B4005EB4DE /* B.m */,
-				03EF8065225DE2BB005EB4DE /* C.h */,
-				03EF8066225DE2BB005EB4DE /* C.m */,
 				03EF80A02264565D005EB4DE /* Node.h */,
 				03EF80A12264565D005EB4DE /* Node.m */,
 				03EF80A322645CE5005EB4DE /* DirectInsertSort.h */,
 				03EF80A422645CE5005EB4DE /* DirectInsertSort.m */,
-				03884ABD2223E6050000E9C4 /* GCDAction.h */,
-				03884ABE2223E6050000E9C4 /* GCDAction.m */,
-				03FD1EAA223271F700CC2DE2 /* OperationAction.h */,
-				03FD1EAB223271F700CC2DE2 /* OperationAction.m */,
-				0334F68C22117B5300CD89FB /* RandomMoney.h */,
-				0334F68D22117B5300CD89FB /* RandomMoney.m */,
-				03B7C81E22019CBA004E08E5 /* HittestView.h */,
-				03B7C81F22019CBA004E08E5 /* HittestView.m */,
-				03F2EDC621FE9D4100D03703 /* Calculator.h */,
-				03F2EDC721FE9D4100D03703 /* Calculator.m */,
+				03862E4D2296900400CE815A /* OperationProtocol.h */,
+				03862E5522969BA700CE815A /* GloableMacro.h */,
+				03862E4E2296962100CE815A /* CoreAnimation */,
+				03862E362296480F00CE815A /* GCDAction */,
+				03862E4822968E7300CE815A /* NSOperationActions */,
+				03862E3922966DFC00CE815A /* RandomRedpackage */,
+				03862E352296473B00CE815A /* Hittest */,
+				03862E342296466E00CE815A /* Calculator */,
 				03F2EDC921FEAC1300D03703 /* WCStream.h */,
 				03F2EDCA21FEAC1300D03703 /* WCStream.m */,
 				03F2EDD021FED89900D03703 /* WCBuilder.h */,
@@ -340,67 +322,8 @@
 				03F2EDD721FED8BE00D03703 /* WCCharator.m */,
 				03F2EDD921FED8CF00D03703 /* WCBridge.h */,
 				03F2EDDA21FED8CF00D03703 /* WCBridge.m */,
-				03F2EDDD21FEE45F00D03703 /* OrderManagerViewController.h */,
-				03F2EDDE21FEE45F00D03703 /* OrderManagerViewController.m */,
-				03F2EDE021FEE46E00D03703 /* OrderAllViewController.h */,
-				03F2EDE121FEE46E00D03703 /* OrderAllViewController.m */,
-				03F2EDE321FEE48600D03703 /* OrderWaitConfirmViewController.h */,
-				03F2EDE421FEE48600D03703 /* OrderWaitConfirmViewController.m */,
-				03F2EDE621FEE49200D03703 /* OrderCancelViewController.h */,
-				03F2EDE721FEE49200D03703 /* OrderCancelViewController.m */,
-				03F2EDE921FEE4A400D03703 /* OrderDeliverViewController.h */,
-				03F2EDEA21FEE4A400D03703 /* OrderDeliverViewController.m */,
-				03F2EDEC21FEE4AE00D03703 /* OrderFinishViewController.h */,
-				03F2EDED21FEE4AE00D03703 /* OrderFinishViewController.m */,
-				03F2EDF921FEE5ED00D03703 /* PaySendModel.h */,
-				03F2EDFA21FEE5ED00D03703 /* PaySendModel.m */,
-				03F2EDEF21FEE56C00D03703 /* PayHelper.h */,
-				03F2EDF021FEE56C00D03703 /* PayHelper.m */,
-				03F2EDF221FEE59200D03703 /* PayProcessor.h */,
-				03F2EDF321FEE5B500D03703 /* AliPayProcessor.h */,
-				03F2EDF421FEE5B500D03703 /* AliPayProcessor.m */,
-				03F2EDF621FEE5CA00D03703 /* WechatPayProcessor.h */,
-				03F2EDF721FEE5CA00D03703 /* WechatPayProcessor.m */,
-				03F2EDFC21FEF0F600D03703 /* Car.h */,
-				03F2EDFD21FEF0F600D03703 /* Car.m */,
-				03F2EDFF21FEF20F00D03703 /* BaoMaCar.h */,
-				03F2EE0021FEF20F00D03703 /* BaoMaCar.m */,
-				03F2EE0221FF02B200D03703 /* ICar.h */,
-				03F2EE0321FF036400D03703 /* ICarProfessionalCar.h */,
-				03F2EE0421FF03A200D03703 /* IEntertainingCar.h */,
-				03F2EE0521FF042000D03703 /* SangTaNaCar.h */,
-				03F2EE0621FF042000D03703 /* SangTaNaCar.m */,
-				03F2EE0821FF058900D03703 /* Car2.h */,
-				03F2EE0921FF058900D03703 /* Car2.m */,
-				03F2EE0B21FF08B000D03703 /* Gasoline.h */,
-				03F2EE0C21FF096300D03703 /* Gasoline90.h */,
-				03F2EE0D21FF096300D03703 /* Gasoline90.m */,
-				03F2EE0F21FF096F00D03703 /* Gasoline93.h */,
-				03F2EE1021FF096F00D03703 /* Gasoline93.m */,
-				03F2EE1221FF110600D03703 /* Person.h */,
-				03F2EE1321FF110600D03703 /* Person.m */,
-				03F2EE1521FF11A800D03703 /* WorkerInPetrolStation.h */,
-				03F2EE1621FF11A800D03703 /* WorkerInPetrolStation.m */,
-				03F2EE1821FFF5C400D03703 /* AbstractFactory.h */,
-				03F2EE1921FFF5C400D03703 /* AbstractFactory.m */,
-				03F2EE1B21FFF5EF00D03703 /* ConstractFactoryA.h */,
-				03F2EE1C21FFF5EF00D03703 /* ConstractFactoryA.m */,
-				03F2EE1E21FFF5FF00D03703 /* ConstractFactoryB.h */,
-				03F2EE1F21FFF5FF00D03703 /* ConstractFactoryB.m */,
-				03F2EE2121FFF89E00D03703 /* Builder.h */,
-				03F2EE2221FFF89E00D03703 /* Builder.m */,
-				03F2EE2421FFF8A900D03703 /* Director.h */,
-				03F2EE2521FFF8A900D03703 /* Director.m */,
-				03F2EE2721FFF8B000D03703 /* Product.h */,
-				03F2EE2821FFF8B000D03703 /* Product.m */,
-				03884AB72223E2ED0000E9C4 /* ProductA.h */,
-				03884AB82223E2ED0000E9C4 /* ProductA.m */,
-				03884ABA2223E2F70000E9C4 /* ProductB.h */,
-				03884ABB2223E2F70000E9C4 /* ProductB.m */,
-				03C6508D22017191009D4EEC /* WCWKViewController.h */,
-				03C6508E22017191009D4EEC /* WCWKViewController.m */,
-				030C80BB220304EC00308399 /* TemplateViewController.h */,
-				030C80BC220304EC00308399 /* TemplateViewController.m */,
+				03862E3822966D8500CE815A /* DesignPhilosophy */,
+				03862E37229662E300CE815A /* Factory */,
 				0321AE90219D668E002621A8 /* Main.storyboard */,
 				0321AE93219D6693002621A8 /* Assets.xcassets */,
 				0321AE95219D6693002621A8 /* LaunchScreen.storyboard */,
@@ -431,6 +354,147 @@
 				03862E112294E79B00CE815A /* Info.plist */,
 			);
 			path = WCSDK;
+			sourceTree = "<group>";
+		};
+		03862E342296466E00CE815A /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				03F2EDC621FE9D4100D03703 /* Calculator.h */,
+				03F2EDC721FE9D4100D03703 /* Calculator.m */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		03862E352296473B00CE815A /* Hittest */ = {
+			isa = PBXGroup;
+			children = (
+				03B7C81E22019CBA004E08E5 /* HittestView.h */,
+				03B7C81F22019CBA004E08E5 /* HittestView.m */,
+			);
+			path = Hittest;
+			sourceTree = "<group>";
+		};
+		03862E362296480F00CE815A /* GCDAction */ = {
+			isa = PBXGroup;
+			children = (
+				03862E4A22968F7200CE815A /* GCDOperation.h */,
+				03862E4B22968F7200CE815A /* GCDOperation.m */,
+				03884ABD2223E6050000E9C4 /* GCDAction.h */,
+				03884ABE2223E6050000E9C4 /* GCDAction.m */,
+			);
+			path = GCDAction;
+			sourceTree = "<group>";
+		};
+		03862E37229662E300CE815A /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				03F2EE1821FFF5C400D03703 /* AbstractFactory.h */,
+				03F2EE1921FFF5C400D03703 /* AbstractFactory.m */,
+				03F2EE1B21FFF5EF00D03703 /* ConstractFactoryA.h */,
+				03F2EE1C21FFF5EF00D03703 /* ConstractFactoryA.m */,
+				03F2EE1E21FFF5FF00D03703 /* ConstractFactoryB.h */,
+				03F2EE1F21FFF5FF00D03703 /* ConstractFactoryB.m */,
+				03F2EE2121FFF89E00D03703 /* Builder.h */,
+				03F2EE2221FFF89E00D03703 /* Builder.m */,
+				03F2EE2421FFF8A900D03703 /* Director.h */,
+				03F2EE2521FFF8A900D03703 /* Director.m */,
+				03F2EE2721FFF8B000D03703 /* Product.h */,
+				03F2EE2821FFF8B000D03703 /* Product.m */,
+				03884AB72223E2ED0000E9C4 /* ProductA.h */,
+				03884AB82223E2ED0000E9C4 /* ProductA.m */,
+				03884ABA2223E2F70000E9C4 /* ProductB.h */,
+				03884ABB2223E2F70000E9C4 /* ProductB.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		03862E3822966D8500CE815A /* DesignPhilosophy */ = {
+			isa = PBXGroup;
+			children = (
+				03F2EDF921FEE5ED00D03703 /* PaySendModel.h */,
+				03F2EDFA21FEE5ED00D03703 /* PaySendModel.m */,
+				03F2EDEF21FEE56C00D03703 /* PayHelper.h */,
+				03F2EDF021FEE56C00D03703 /* PayHelper.m */,
+				03F2EDF221FEE59200D03703 /* PayProcessor.h */,
+				03F2EDF321FEE5B500D03703 /* AliPayProcessor.h */,
+				03F2EDF421FEE5B500D03703 /* AliPayProcessor.m */,
+				03F2EDF621FEE5CA00D03703 /* WechatPayProcessor.h */,
+				03F2EDF721FEE5CA00D03703 /* WechatPayProcessor.m */,
+				03F2EDFC21FEF0F600D03703 /* Car.h */,
+				03F2EDFD21FEF0F600D03703 /* Car.m */,
+				03F2EDFF21FEF20F00D03703 /* BaoMaCar.h */,
+				03F2EE0021FEF20F00D03703 /* BaoMaCar.m */,
+				03F2EE0221FF02B200D03703 /* ICar.h */,
+				03F2EE0321FF036400D03703 /* ICarProfessionalCar.h */,
+				03F2EE0421FF03A200D03703 /* IEntertainingCar.h */,
+				03F2EE0521FF042000D03703 /* SangTaNaCar.h */,
+				03F2EE0621FF042000D03703 /* SangTaNaCar.m */,
+				03F2EE0821FF058900D03703 /* Car2.h */,
+				03F2EE0921FF058900D03703 /* Car2.m */,
+				03F2EE0B21FF08B000D03703 /* Gasoline.h */,
+				03F2EE0C21FF096300D03703 /* Gasoline90.h */,
+				03F2EE0D21FF096300D03703 /* Gasoline90.m */,
+				03F2EE0F21FF096F00D03703 /* Gasoline93.h */,
+				03F2EE1021FF096F00D03703 /* Gasoline93.m */,
+				03F2EE1221FF110600D03703 /* Person.h */,
+				03F2EE1321FF110600D03703 /* Person.m */,
+				03F2EE1521FF11A800D03703 /* WorkerInPetrolStation.h */,
+				03F2EE1621FF11A800D03703 /* WorkerInPetrolStation.m */,
+			);
+			path = DesignPhilosophy;
+			sourceTree = "<group>";
+		};
+		03862E3922966DFC00CE815A /* RandomRedpackage */ = {
+			isa = PBXGroup;
+			children = (
+				0334F68C22117B5300CD89FB /* RandomMoney.h */,
+				0334F68D22117B5300CD89FB /* RandomMoney.m */,
+			);
+			path = RandomRedpackage;
+			sourceTree = "<group>";
+		};
+		03862E3A22966E3D00CE815A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0321AE8A219D668E002621A8 /* AppDelegate.h */,
+				0321AE8B219D668E002621A8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		03862E412296883A00CE815A /* CBGroupWatherLab */ = {
+			isa = PBXGroup;
+			children = (
+				03862E442296883A00CE815A /* UIView+CBExtension.h */,
+				03862E422296883A00CE815A /* UIView+CBExtension.m */,
+				03862E432296883A00CE815A /* CBGroupAndStreamView.h */,
+				03862E452296883A00CE815A /* CBGroupAndStreamView.m */,
+			);
+			path = CBGroupWatherLab;
+			sourceTree = "<group>";
+		};
+		03862E4822968E7300CE815A /* NSOperationActions */ = {
+			isa = PBXGroup;
+			children = (
+				03FD1EAA223271F700CC2DE2 /* OperationAction.h */,
+				03FD1EAB223271F700CC2DE2 /* OperationAction.m */,
+				03862E3E22967ACD00CE815A /* CustomOperation.h */,
+				03862E3F22967ACD00CE815A /* CustomOperation.m */,
+				03862E3B2296750600CE815A /* GloableOperation.h */,
+				03862E3C2296750600CE815A /* GloableOperation.m */,
+			);
+			path = NSOperationActions;
+			sourceTree = "<group>";
+		};
+		03862E4E2296962100CE815A /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				03862E4F2296963E00CE815A /* CoreAnimationOperation.h */,
+				03862E502296963E00CE815A /* CoreAnimationOperation.m */,
+				03862E52229696C500CE815A /* CoreAnimationViewController.h */,
+				03862E53229696C500CE815A /* CoreAnimationViewController.m */,
+			);
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,50 +618,46 @@
 				03F2EDF121FEE56C00D03703 /* PayHelper.m in Sources */,
 				03F2EE2621FFF8A900D03703 /* Director.m in Sources */,
 				03F2EE1D21FFF5EF00D03703 /* ConstractFactoryA.m in Sources */,
-				03F2EDEE21FEE4AE00D03703 /* OrderFinishViewController.m in Sources */,
 				03F2EE2021FFF5FF00D03703 /* ConstractFactoryB.m in Sources */,
 				0321AE8F219D668E002621A8 /* ViewController.m in Sources */,
 				03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */,
 				03F2EE2321FFF89E00D03703 /* Builder.m in Sources */,
 				03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */,
 				0321AE9A219D6693002621A8 /* main.m in Sources */,
+				03862E3D2296750600CE815A /* GloableOperation.m in Sources */,
 				03F2EDDB21FED8CF00D03703 /* WCBridge.m in Sources */,
-				03F2EDE221FEE46E00D03703 /* OrderAllViewController.m in Sources */,
 				03F2EDD521FED8A300D03703 /* WCDirect.m in Sources */,
-				03F2EDE521FEE48600D03703 /* OrderWaitConfirmViewController.m in Sources */,
+				03862E4022967ACD00CE815A /* CustomOperation.m in Sources */,
 				03FD1EAC223271F700CC2DE2 /* OperationAction.m in Sources */,
 				03F2EE0721FF042000D03703 /* SangTaNaCar.m in Sources */,
 				03F2EE1121FF096F00D03703 /* Gasoline93.m in Sources */,
-				03EF8061225DE2AC005EB4DE /* A.m in Sources */,
 				03884ABF2223E6050000E9C4 /* GCDAction.m in Sources */,
+				03862E54229696C500CE815A /* CoreAnimationViewController.m in Sources */,
 				03F2EDF521FEE5B500D03703 /* AliPayProcessor.m in Sources */,
 				03F2EDFE21FEF0F600D03703 /* Car.m in Sources */,
+				03862E472296883A00CE815A /* CBGroupAndStreamView.m in Sources */,
 				03F2EDFB21FEE5ED00D03703 /* PaySendModel.m in Sources */,
 				0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */,
-				03F2EDE821FEE49200D03703 /* OrderCancelViewController.m in Sources */,
 				0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */,
 				03F2EE0121FEF20F00D03703 /* BaoMaCar.m in Sources */,
 				03F2EE1A21FFF5C400D03703 /* AbstractFactory.m in Sources */,
 				03F2EDD221FED89900D03703 /* WCBuilder.m in Sources */,
 				03EF80A92266C10A005EB4DE /* CustomView.m in Sources */,
-				03EF8067225DE2BB005EB4DE /* C.m in Sources */,
-				03C6508F22017191009D4EEC /* WCWKViewController.m in Sources */,
-				03F2EDEB21FEE4A400D03703 /* OrderDeliverViewController.m in Sources */,
 				03F2EDF821FEE5CA00D03703 /* WechatPayProcessor.m in Sources */,
-				030C80BD220304EC00308399 /* TemplateViewController.m in Sources */,
 				03F2EE2921FFF8B000D03703 /* Product.m in Sources */,
 				0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */,
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
 				03EF80A22264565D005EB4DE /* Node.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
 				0325943C229402990063F390 /* LoginViewController.m in Sources */,
-				03EF8064225DE2B4005EB4DE /* B.m in Sources */,
+				03862E4C22968F7200CE815A /* GCDOperation.m in Sources */,
 				03F2EDD821FED8BE00D03703 /* WCCharator.m in Sources */,
-				03F2EDDF21FEE45F00D03703 /* OrderManagerViewController.m in Sources */,
+				03862E462296883A00CE815A /* UIView+CBExtension.m in Sources */,
 				03F2EE1421FF110600D03703 /* Person.m in Sources */,
 				03F2EE0A21FF058900D03703 /* Car2.m in Sources */,
 				0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */,
 				03F2EDCB21FEAC1300D03703 /* WCStream.m in Sources */,
+				03862E512296963E00CE815A /* CoreAnimationOperation.m in Sources */,
 				03F2EE1721FF11A800D03703 /* WorkerInPetrolStation.m in Sources */,
 				03884AB92223E2ED0000E9C4 /* ProductA.m in Sources */,
 			);

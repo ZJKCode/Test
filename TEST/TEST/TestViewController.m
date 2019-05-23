@@ -9,12 +9,23 @@
 #import "TestViewController.h"
 #import "GCDAction.h"
 #import "CustomView.h"
-
+#import "GloableMacro.h"
 #import <iToast/UIView+iToast.h>
 #import <iToast/Instancefactory.h>
 #import <WCSDK/WCSDK.h>
+#import "CBGroupAndStreamView.h"
+#import "GloableOperation.h"
+#import "GCDOperation.h"
+#import "OperationProtocol.h"
+#import "CoreAnimationOperation.h"
 
-@interface TestViewController ()
+@interface TestViewController ()<CBGroupAndStreamDelegate>
+@property (strong, nonatomic) CBGroupAndStreamView * menueView;
+@property (nonatomic, strong) GloableOperation *operation;
+@property (nonatomic, strong) GCDOperation *gcdOperation;
+@property (nonatomic, strong) NSMutableArray *operationClasses;
+@property (nonatomic, strong) CoreAnimationOperation *animationOperation;
+
 
 @end
 
@@ -23,16 +34,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    // 线程 (CPU 调度)
-    // 任务：sync 和 async
-    // 队列：串行队列 和 并发队列
-//
-//
-//    [[GCDAction shareInstance] testDispatchGroup];
-//    [[GCDAction shareInstance] testDispatchBarrier];
-//    [[GCDAction shareInstance] testDispatchOnceToken];
-//    [[GCDAction shareInstance] testDispatchOnceToken];
-
     NSLog(@"%@", [self getMonthList]);
 
     [self pupSort:@[]];
@@ -45,19 +46,10 @@
 
     [self quickSortArray:arr withLeftIndex:0 andRightIndex:arr.count - 1];
 
-//    [self addSubViews];
-    NSLog(@"%@",arr);
-
-    NSArray *putOutAFire = @[@"冷却灭火",@"隔离灭火",@"窒息灭火",@"化学抑制"];
-
-    NSLog(@"%@",putOutAFire);
-
     NSObject<ModuleProtocol> *instance = [Instancefactory instanceWithClassName:@"LoginViewController"];
 
     [instance changePassword];
 
-//    [self.view makeToast:@"what fucking the code"];
-//    [self.view makeToast:@"the position is top" duration:10 position:CSToastPositionTop];
     [self.view makeToast:@"the position is center" duration:10 position:CSToastPositionCenter];
 
     WCSDKUser *user =  [[WCSDKUser alloc] init];
@@ -71,60 +63,44 @@
 
     NSLog(@"mode2 %@",mode2.url);
 
+
+    NSArray *titleArr = @[@"NSOperation",
+                          @"GCDAction 研究",
+                          @"CoreAnimation"
+                          ];
+    NSArray *contentArr = @[
+                            [self.operation operations],
+                            [self.gcdOperation operations],
+                            [self.animationOperation operations]
+                            ];
+
+    CBGroupAndStreamView * silde = [[CBGroupAndStreamView alloc] initWithFrame:
+                                    CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    silde.delegate = self;
+    silde.radius = 10;
+    silde.font = [UIFont systemFontOfSize:12];
+    silde.titleTextFont = [UIFont systemFontOfSize:18];
+    silde.selColor = [UIColor orangeColor];
+    [silde setContentView:contentArr titleArr:titleArr];
+    [self.view addSubview:silde];
+    _menueView = silde;
+
+    [self.operationClasses addObject:self.operation];
+    [self.operationClasses addObject:self.gcdOperation];
+    [self.operationClasses addObject:self.animationOperation];
 }
 
-- (void)addSubViews {
-    CustomView *cView = [[CustomView alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
-    cView.backgroundColor = [UIColor redColor];
-
-    [self.view addSubview:cView];
-
-    [UIView animateWithDuration:5.0 animations:^{
-        cView.frame = CGRectMake(200, 400, 60, 60);
-    } completion:^(BOOL finished) {
-        cView.frame = CGRectMake(200, 400, 60, 60);
-    }];
-
-    [cView setNeedsLayout];
-    // 1. 创建关键帧动画
-    CAKeyframeAnimation *keyAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    [keyAnimation setValue:[NSValue valueWithCGPoint:CGPointMake(50, 614) ]forKey:@"LayerPosition"];
-
-    // 2. 设置贝塞尔曲线路径
-    CGMutablePathRef path = CGPathCreateMutable();
-    // 设置易懂的起始点
-    CGPathMoveToPoint(path, NULL, cView.layer.position.x, cView.layer.position.y);
-
-    // 绘制二次贝塞尔曲线
-    // 可以添加路径,
-    CGPathAddCurveToPoint(path, NULL, 160, 280, -30, 300, 50, 400);
-    CGPathAddCurveToPoint(path, NULL, 160, 500, -30, 600, 50, 614);
-    // 给动画添加路径 设置路径属性
-    keyAnimation.path = path;
-
-    CAShapeLayer *shapLayer = [CAShapeLayer layer];
-    shapLayer.path = path;
-    shapLayer.fillColor = [UIColor blueColor].CGColor;
-
-    shapLayer.lineWidth = 1.0f;
-
-    [self.view.layer addSublayer:shapLayer];
-
-    // 记得释放路径
-    CGPathRelease(path);
-
-    keyAnimation.calculationMode = kCAAnimationCubic;
-
-    // 设置动画其他属性
-    keyAnimation.duration = 5.0;
-    keyAnimation.removedOnCompletion = NO;
-    keyAnimation.repeatCount = 10;
-
-    keyAnimation.delegate = self;
-
-    // 给图层添加动画
-    [cView.layer addAnimation:keyAnimation forKey:@"KCKeyAnimation_Positon"];
+#pragma mark - CBGroupAndStreamViewDelegate
+- (void)cb_confirmReturnValue:(NSArray *)valueArr groupId:(NSArray *)groupIdArr{
+    NSLog(@"valueArr = %@ \ngroupIdArr = %@",valueArr,groupIdArr);
 }
+
+- (void)cb_selectCurrentValueWith:(NSString *)value index:(NSInteger)index groupId:(NSInteger)groupId{
+    NSLog(@"value = %@----index = %ld------groupId = %ld",value,index,groupId);
+    id <OperationProtocol> operation = self.operationClasses[groupId];
+    [operation operationTarget:self WithIndex:index];
+}
+
 - (NSArray *)pupSort:(NSArray *)list {
     // 冒泡排序时候 逻辑思想是 相邻的两个元素相互比较,较大的放在后面 较大的放在后面
 
@@ -283,5 +259,30 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
+}
+
+- (GloableOperation *)operation {
+    if (!_operation) {
+        _operation = [[GloableOperation alloc] init];
+    }
+    return _operation;
+}
+- (GCDOperation *)gcdOperation {
+    if (!_gcdOperation) {
+        _gcdOperation = [[GCDOperation alloc] init];
+    }
+    return _gcdOperation;
+}
+- (NSMutableArray *)operationClasses {
+    if (!_operationClasses) {
+        _operationClasses = [NSMutableArray array];
+    }
+    return _operationClasses;
+}
+- (CoreAnimationOperation *)animationOperation {
+    if (!_animationOperation) {
+        _animationOperation = [[CoreAnimationOperation alloc] init];
+    }
+    return _animationOperation;
 }
 @end

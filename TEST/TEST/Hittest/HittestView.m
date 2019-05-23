@@ -38,7 +38,6 @@
         [self addSubview:button2];
         [button2 addTarget:self action:@selector(click2) forControlEvents:UIControlEventTouchUpInside];
 
-
     }
     return self;
 }
@@ -58,7 +57,8 @@
     if ([self pointInside:point withEvent:event] == NO) return nil;
     // 3.从后往前遍历自己的子控件
     NSInteger count = self.subviews.count;
-    for (NSInteger i = count - 1; i >= 0; i--) { // 系统的内部原理
+    for (NSInteger i = count - 1; i >= 0; i--) {
+        // 系统的内部原理
         UIView *childView = self.subviews[i];
         // 把当前控件上的坐标系转换成子控件上的坐标系
         CGPoint childP = [self convertPoint:point toView:childView];
@@ -83,12 +83,4 @@
     // 事件传递的内部原理
     return self;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 @end

@@ -17,3 +17,6 @@ FOUNDATION_EXPORT const unsigned char WCSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <WCSDK/PublicHeader.h>
 
 #import "WCSDKUser.h"
+#import "IWCDataModel.h"
+#import "WCDataModel.h"
+
