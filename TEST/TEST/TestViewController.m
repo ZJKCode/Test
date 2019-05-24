@@ -12,13 +12,12 @@
 #import "GloableMacro.h"
 #import <iToast/UIView+iToast.h>
 #import <iToast/Instancefactory.h>
-#import <WCSDK/WCSDK.h>
 #import "CBGroupAndStreamView.h"
 #import "GloableOperation.h"
 #import "GCDOperation.h"
 #import "OperationProtocol.h"
 #import "CoreAnimationOperation.h"
-
+#import <ZJKBaseSDK/WCSDK.h>
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
 @property (nonatomic, strong) GloableOperation *operation;
