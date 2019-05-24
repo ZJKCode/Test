@@ -6,14 +6,8 @@ target 'TEST' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod "ZJKBaseSDK"
+#  pod "HXDOCRPlugin", :path => '../PodsDev/HXDOCRPlugin'
   # Pods for TEST
 
 end
 
-target 'WCSDK' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for WCSDK
-
-end
