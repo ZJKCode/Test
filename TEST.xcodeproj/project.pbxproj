@@ -19,6 +19,12 @@
 		0321AE9A219D6693002621A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE99219D6693002621A8 /* main.m */; };
 		0325943C229402990063F390 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0325943B229402990063F390 /* LoginViewController.m */; };
 		0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334F68D22117B5300CD89FB /* RandomMoney.m */; };
+		034F7B92229B7B1A00740AFF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8A229B7B1900740AFF /* RootViewController.m */; };
+		034F7B93229B7B1A00740AFF /* DiskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8C229B7B1A00740AFF /* DiskView.m */; };
+		034F7B94229B7B1A00740AFF /* TowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8E229B7B1A00740AFF /* TowerViewController.m */; };
+		034F7B95229B7B1A00740AFF /* TowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B90229B7B1A00740AFF /* TowerView.m */; };
+		034F7B98229B7B8300740AFF /* HanoiTowerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B97229B7B8300740AFF /* HanoiTowerOperation.m */; };
+		034F7B9B229B802A00740AFF /* ZJKDeviceMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B9A229B802A00740AFF /* ZJKDeviceMananger.m */; };
 		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
 		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03862E3D2296750600CE815A /* GloableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3C2296750600CE815A /* GloableOperation.m */; };
@@ -98,6 +104,18 @@
 		0325943B229402990063F390 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0334F68C22117B5300CD89FB /* RandomMoney.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomMoney.h; sourceTree = "<group>"; };
 		0334F68D22117B5300CD89FB /* RandomMoney.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomMoney.m; sourceTree = "<group>"; };
+		034F7B8A229B7B1900740AFF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		034F7B8B229B7B1900740AFF /* TowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerViewController.h; sourceTree = "<group>"; };
+		034F7B8C229B7B1A00740AFF /* DiskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskView.m; sourceTree = "<group>"; };
+		034F7B8D229B7B1A00740AFF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		034F7B8E229B7B1A00740AFF /* TowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TowerViewController.m; sourceTree = "<group>"; };
+		034F7B8F229B7B1A00740AFF /* TowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerView.h; sourceTree = "<group>"; };
+		034F7B90229B7B1A00740AFF /* TowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TowerView.m; sourceTree = "<group>"; };
+		034F7B91229B7B1A00740AFF /* DiskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskView.h; sourceTree = "<group>"; };
+		034F7B96229B7B8300740AFF /* HanoiTowerOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HanoiTowerOperation.h; sourceTree = "<group>"; };
+		034F7B97229B7B8300740AFF /* HanoiTowerOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HanoiTowerOperation.m; sourceTree = "<group>"; };
+		034F7B99229B802A00740AFF /* ZJKDeviceMananger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJKDeviceMananger.h; sourceTree = "<group>"; };
+		034F7B9A229B802A00740AFF /* ZJKDeviceMananger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJKDeviceMananger.m; sourceTree = "<group>"; };
 		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
 		03862E3C2296750600CE815A /* GloableOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GloableOperation.m; sourceTree = "<group>"; };
@@ -277,6 +295,9 @@
 				03EF80A422645CE5005EB4DE /* DirectInsertSort.m */,
 				03862E4D2296900400CE815A /* OperationProtocol.h */,
 				03862E5522969BA700CE815A /* GloableMacro.h */,
+				034F7B99229B802A00740AFF /* ZJKDeviceMananger.h */,
+				034F7B9A229B802A00740AFF /* ZJKDeviceMananger.m */,
+				034F7B89229B7AF000740AFF /* Hanoi */,
 				03862E4E2296962100CE815A /* CoreAnimation */,
 				03862E362296480F00CE815A /* GCDAction */,
 				03862E4822968E7300CE815A /* NSOperationActions */,
@@ -304,6 +325,23 @@
 				03862E032294DB6700CE815A /* iToast.framework */,
 			);
 			path = TEST;
+			sourceTree = "<group>";
+		};
+		034F7B89229B7AF000740AFF /* Hanoi */ = {
+			isa = PBXGroup;
+			children = (
+				034F7B91229B7B1A00740AFF /* DiskView.h */,
+				034F7B8C229B7B1A00740AFF /* DiskView.m */,
+				034F7B8D229B7B1A00740AFF /* RootViewController.h */,
+				034F7B8A229B7B1900740AFF /* RootViewController.m */,
+				034F7B8F229B7B1A00740AFF /* TowerView.h */,
+				034F7B90229B7B1A00740AFF /* TowerView.m */,
+				034F7B8B229B7B1900740AFF /* TowerViewController.h */,
+				034F7B8E229B7B1A00740AFF /* TowerViewController.m */,
+				034F7B96229B7B8300740AFF /* HanoiTowerOperation.h */,
+				034F7B97229B7B8300740AFF /* HanoiTowerOperation.m */,
+			);
+			path = Hanoi;
 			sourceTree = "<group>";
 		};
 		03862E052294DBCD00CE815A /* Frameworks */ = {
@@ -582,10 +620,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034F7B94229B7B1A00740AFF /* TowerViewController.m in Sources */,
 				03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */,
 				03B7C82022019CBA004E08E5 /* HittestView.m in Sources */,
+				034F7B92229B7B1A00740AFF /* RootViewController.m in Sources */,
 				03F2EDF121FEE56C00D03703 /* PayHelper.m in Sources */,
+				034F7B98229B7B8300740AFF /* HanoiTowerOperation.m in Sources */,
 				03F2EE2621FFF8A900D03703 /* Director.m in Sources */,
+				034F7B95229B7B1A00740AFF /* TowerView.m in Sources */,
 				03F2EE1D21FFF5EF00D03703 /* ConstractFactoryA.m in Sources */,
 				03F2EE2021FFF5FF00D03703 /* ConstractFactoryB.m in Sources */,
 				0321AE8F219D668E002621A8 /* ViewController.m in Sources */,
@@ -606,6 +648,8 @@
 				03F2EDFE21FEF0F600D03703 /* Car.m in Sources */,
 				03862E472296883A00CE815A /* CBGroupAndStreamView.m in Sources */,
 				03F2EDFB21FEE5ED00D03703 /* PaySendModel.m in Sources */,
+				034F7B9B229B802A00740AFF /* ZJKDeviceMananger.m in Sources */,
+				034F7B93229B7B1A00740AFF /* DiskView.m in Sources */,
 				0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */,
 				0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */,
 				03F2EE0121FEF20F00D03703 /* BaoMaCar.m in Sources */,

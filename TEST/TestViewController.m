@@ -17,6 +17,7 @@
 #import "GCDOperation.h"
 #import "OperationProtocol.h"
 #import "CoreAnimationOperation.h"
+#import "HanoiTowerOperation.h"
 #import <ZJKBaseSDK/WCSDK.h>
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
@@ -24,7 +25,7 @@
 @property (nonatomic, strong) GCDOperation *gcdOperation;
 @property (nonatomic, strong) NSMutableArray *operationClasses;
 @property (nonatomic, strong) CoreAnimationOperation *animationOperation;
-
+@property (nonatomic, strong) HanoiTowerOperation *hanoiOperation;
 
 @end
 
@@ -65,12 +66,14 @@
 
     NSArray *titleArr = @[@"NSOperation",
                           @"GCDAction 研究",
-                          @"CoreAnimation"
+                          @"CoreAnimation",
+                          @"汉诺塔算法演示",
                           ];
     NSArray *contentArr = @[
                             [self.operation operations],
                             [self.gcdOperation operations],
-                            [self.animationOperation operations]
+                            [self.animationOperation operations],
+                            [self.hanoiOperation operations],
                             ];
 
     CBGroupAndStreamView * silde = [[CBGroupAndStreamView alloc] initWithFrame:
@@ -87,6 +90,7 @@
     [self.operationClasses addObject:self.operation];
     [self.operationClasses addObject:self.gcdOperation];
     [self.operationClasses addObject:self.animationOperation];
+    [self.operationClasses addObject:self.hanoiOperation];
 }
 
 #pragma mark - CBGroupAndStreamViewDelegate
@@ -283,5 +287,12 @@
         _animationOperation = [[CoreAnimationOperation alloc] init];
     }
     return _animationOperation;
+}
+- (HanoiTowerOperation *)hanoiOperation {
+    if (!_hanoiOperation) {
+        _hanoiOperation = [[HanoiTowerOperation alloc] init];
+    }
+
+    return _hanoiOperation;
 }
 @end
