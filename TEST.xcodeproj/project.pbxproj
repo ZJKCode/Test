@@ -91,6 +91,12 @@
 		034F7C74229B84AE00740AFF /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C30229B84AE00740AFF /* ConcreteComponent.m */; };
 		034F7C75229B84AE00740AFF /* ConcreteDecoratorA.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C31229B84AE00740AFF /* ConcreteDecoratorA.m */; };
 		034F7C78229B858C00740AFF /* DesignPatternOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C77229B858C00740AFF /* DesignPatternOperation.m */; };
+		034F7C99229BB16800740AFF /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C98229BB16800740AFF /* MyView.m */; };
+		034F7C9C229BB19F00740AFF /* ZJKBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C9B229BB19F00740AFF /* ZJKBezierViewController.m */; };
+		034F7C9F229BB3D200740AFF /* BezierOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7C9E229BB3D200740AFF /* BezierOperation.m */; };
+		034F7CA4229BBBF800740AFF /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA3229BBBF800740AFF /* Sort.m */; };
+		034F7CA7229BBC4E00740AFF /* AbstractOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA6229BBC4E00740AFF /* AbstractOperation.m */; };
+		034F7CAA229BBCB900740AFF /* SortOperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA9229BBCB900740AFF /* SortOperationAction.m */; };
 		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
 		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03862E3D2296750600CE815A /* GloableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3C2296750600CE815A /* GloableOperation.m */; };
@@ -323,6 +329,18 @@
 		034F7C34229B84AE00740AFF /* ConcreteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
 		034F7C76229B858C00740AFF /* DesignPatternOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignPatternOperation.h; sourceTree = "<group>"; };
 		034F7C77229B858C00740AFF /* DesignPatternOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternOperation.m; sourceTree = "<group>"; };
+		034F7C97229BB16800740AFF /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		034F7C98229BB16800740AFF /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		034F7C9A229BB19F00740AFF /* ZJKBezierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJKBezierViewController.h; sourceTree = "<group>"; };
+		034F7C9B229BB19F00740AFF /* ZJKBezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJKBezierViewController.m; sourceTree = "<group>"; };
+		034F7C9D229BB3D200740AFF /* BezierOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierOperation.h; sourceTree = "<group>"; };
+		034F7C9E229BB3D200740AFF /* BezierOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierOperation.m; sourceTree = "<group>"; };
+		034F7CA2229BBBF800740AFF /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		034F7CA3229BBBF800740AFF /* Sort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
+		034F7CA5229BBC4E00740AFF /* AbstractOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractOperation.h; sourceTree = "<group>"; };
+		034F7CA6229BBC4E00740AFF /* AbstractOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractOperation.m; sourceTree = "<group>"; };
+		034F7CA8229BBCB900740AFF /* SortOperationAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortOperationAction.h; sourceTree = "<group>"; };
+		034F7CA9229BBCB900740AFF /* SortOperationAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortOperationAction.m; sourceTree = "<group>"; };
 		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
 		03862E3C2296750600CE815A /* GloableOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GloableOperation.m; sourceTree = "<group>"; };
@@ -485,52 +503,47 @@
 		0321AE89219D668E002621A8 /* TEST */ = {
 			isa = PBXGroup;
 			children = (
-				03862E412296883A00CE815A /* CBGroupWatherLab */,
-				0306FD20226D8E5C004B0198 /* TaskModule */,
 				03862E3A22966E3D00CE815A /* AppDelegate */,
-				0321AE8D219D668E002621A8 /* ViewController.h */,
-				0321AE8E219D668E002621A8 /* ViewController.m */,
-				0310B19F221AC069003BCA03 /* TestViewController.h */,
-				0310B1A0221AC069003BCA03 /* TestViewController.m */,
+				0321AE93219D6693002621A8 /* Assets.xcassets */,
+				034F7CA0229BB6CF00740AFF /* BaseModule */,
+				034F7C96229BB14700740AFF /* Bezier */,
+				03862E342296466E00CE815A /* Calculator */,
+				03862E412296883A00CE815A /* CBGroupWatherLab */,
+				03862E4E2296962100CE815A /* CoreAnimation */,
+				034F7B9C229B847E00740AFF /* DesignPattern */,
+				03862E3822966D8500CE815A /* DesignPhilosophy */,
+				034F7CA1229BBB0300740AFF /* Sort */,
+				03862E37229662E300CE815A /* Factory */,
+				03862E362296480F00CE815A /* GCDAction */,
+				034F7B89229B7AF000740AFF /* Hanoi */,
+				03862E352296473B00CE815A /* Hittest */,
+				0321AE98219D6693002621A8 /* Info.plist */,
+				03862E032294DB6700CE815A /* iToast.framework */,
+				0321AE95219D6693002621A8 /* LaunchScreen.storyboard */,
 				0325943A229402990063F390 /* LoginViewController.h */,
 				0325943B229402990063F390 /* LoginViewController.m */,
-				03EF80A72266C10A005EB4DE /* CustomView.h */,
-				03EF80A82266C10A005EB4DE /* CustomView.m */,
+				0321AE99219D6693002621A8 /* main.m */,
+				0321AE90219D668E002621A8 /* Main.storyboard */,
 				03EF80A02264565D005EB4DE /* Node.h */,
 				03EF80A12264565D005EB4DE /* Node.m */,
-				03EF80A322645CE5005EB4DE /* DirectInsertSort.h */,
-				03EF80A422645CE5005EB4DE /* DirectInsertSort.m */,
-				03862E4D2296900400CE815A /* OperationProtocol.h */,
-				03862E5522969BA700CE815A /* GloableMacro.h */,
-				034F7B99229B802A00740AFF /* ZJKDeviceMananger.h */,
-				034F7B9A229B802A00740AFF /* ZJKDeviceMananger.m */,
-				034F7B9C229B847E00740AFF /* DesignPattern */,
-				034F7B89229B7AF000740AFF /* Hanoi */,
-				03862E4E2296962100CE815A /* CoreAnimation */,
-				03862E362296480F00CE815A /* GCDAction */,
 				03862E4822968E7300CE815A /* NSOperationActions */,
 				03862E3922966DFC00CE815A /* RandomRedpackage */,
-				03862E352296473B00CE815A /* Hittest */,
-				03862E342296466E00CE815A /* Calculator */,
-				03F2EDC921FEAC1300D03703 /* WCStream.h */,
-				03F2EDCA21FEAC1300D03703 /* WCStream.m */,
-				03F2EDD021FED89900D03703 /* WCBuilder.h */,
-				03F2EDD121FED89900D03703 /* WCBuilder.m */,
-				03F2EDD321FED8A300D03703 /* WCDirect.h */,
-				03F2EDD421FED8A300D03703 /* WCDirect.m */,
-				03F2EDD621FED8BE00D03703 /* WCCharator.h */,
-				03F2EDD721FED8BE00D03703 /* WCCharator.m */,
+				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
+				0306FD20226D8E5C004B0198 /* TaskModule */,
+				0310B19F221AC069003BCA03 /* TestViewController.h */,
+				0310B1A0221AC069003BCA03 /* TestViewController.m */,
+				0321AE8D219D668E002621A8 /* ViewController.h */,
+				0321AE8E219D668E002621A8 /* ViewController.m */,
 				03F2EDD921FED8CF00D03703 /* WCBridge.h */,
 				03F2EDDA21FED8CF00D03703 /* WCBridge.m */,
-				03862E3822966D8500CE815A /* DesignPhilosophy */,
-				03862E37229662E300CE815A /* Factory */,
-				0321AE90219D668E002621A8 /* Main.storyboard */,
-				0321AE93219D6693002621A8 /* Assets.xcassets */,
-				0321AE95219D6693002621A8 /* LaunchScreen.storyboard */,
-				0321AE98219D6693002621A8 /* Info.plist */,
-				0321AE99219D6693002621A8 /* main.m */,
-				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
-				03862E032294DB6700CE815A /* iToast.framework */,
+				03F2EDD021FED89900D03703 /* WCBuilder.h */,
+				03F2EDD121FED89900D03703 /* WCBuilder.m */,
+				03F2EDD621FED8BE00D03703 /* WCCharator.h */,
+				03F2EDD721FED8BE00D03703 /* WCCharator.m */,
+				03F2EDD321FED8A300D03703 /* WCDirect.h */,
+				03F2EDD421FED8A300D03703 /* WCDirect.m */,
+				03F2EDC921FEAC1300D03703 /* WCStream.h */,
+				03F2EDCA21FEAC1300D03703 /* WCStream.m */,
 			);
 			path = TEST;
 			sourceTree = "<group>";
@@ -804,6 +817,45 @@
 			path = "装饰模式";
 			sourceTree = "<group>";
 		};
+		034F7C96229BB14700740AFF /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				034F7C97229BB16800740AFF /* MyView.h */,
+				034F7C98229BB16800740AFF /* MyView.m */,
+				034F7C9A229BB19F00740AFF /* ZJKBezierViewController.h */,
+				034F7C9B229BB19F00740AFF /* ZJKBezierViewController.m */,
+				034F7C9D229BB3D200740AFF /* BezierOperation.h */,
+				034F7C9E229BB3D200740AFF /* BezierOperation.m */,
+			);
+			path = Bezier;
+			sourceTree = "<group>";
+		};
+		034F7CA0229BB6CF00740AFF /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				03862E4D2296900400CE815A /* OperationProtocol.h */,
+				034F7CA5229BBC4E00740AFF /* AbstractOperation.h */,
+				034F7CA6229BBC4E00740AFF /* AbstractOperation.m */,
+				03862E5522969BA700CE815A /* GloableMacro.h */,
+				034F7B99229B802A00740AFF /* ZJKDeviceMananger.h */,
+				034F7B9A229B802A00740AFF /* ZJKDeviceMananger.m */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		034F7CA1229BBB0300740AFF /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				03EF80A322645CE5005EB4DE /* DirectInsertSort.h */,
+				03EF80A422645CE5005EB4DE /* DirectInsertSort.m */,
+				034F7CA2229BBBF800740AFF /* Sort.h */,
+				034F7CA3229BBBF800740AFF /* Sort.m */,
+				034F7CA8229BBCB900740AFF /* SortOperationAction.h */,
+				034F7CA9229BBCB900740AFF /* SortOperationAction.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		03862E052294DBCD00CE815A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +1001,8 @@
 				03862E502296963E00CE815A /* CoreAnimationOperation.m */,
 				03862E52229696C500CE815A /* CoreAnimationViewController.h */,
 				03862E53229696C500CE815A /* CoreAnimationViewController.m */,
+				03EF80A72266C10A005EB4DE /* CustomView.h */,
+				03EF80A82266C10A005EB4DE /* CustomView.m */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -1087,6 +1141,7 @@
 				034F7C62229B84AE00740AFF /* NoonState.m in Sources */,
 				03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */,
 				03B7C82022019CBA004E08E5 /* HittestView.m in Sources */,
+				034F7C9F229BB3D200740AFF /* BezierOperation.m in Sources */,
 				034F7B92229B7B1A00740AFF /* RootViewController.m in Sources */,
 				034F7C4B229B84AE00740AFF /* Stock3.m in Sources */,
 				034F7C6A229B84AE00740AFF /* OperationFactory.m in Sources */,
@@ -1103,10 +1158,12 @@
 				03F2EE2021FFF5FF00D03703 /* ConstractFactoryB.m in Sources */,
 				0321AE8F219D668E002621A8 /* ViewController.m in Sources */,
 				034F7C3D229B84AE00740AFF /* SqlserverDepartment.m in Sources */,
+				034F7C99229BB16800740AFF /* MyView.m in Sources */,
 				03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */,
 				03F2EE2321FFF89E00D03703 /* Builder.m in Sources */,
 				03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */,
 				034F7C71229B84AE00740AFF /* Volunteer.m in Sources */,
+				034F7C9C229BB19F00740AFF /* ZJKBezierViewController.m in Sources */,
 				0321AE9A219D6693002621A8 /* main.m in Sources */,
 				034F7C5C229B84AE00740AFF /* TestPaper.m in Sources */,
 				034F7C3E229B84AE00740AFF /* SqlServerFactory.m in Sources */,
@@ -1153,6 +1210,7 @@
 				03F2EE0121FEF20F00D03703 /* BaoMaCar.m in Sources */,
 				034F7C75229B84AE00740AFF /* ConcreteDecoratorA.m in Sources */,
 				034F7C58229B84AE00740AFF /* ConcreteCompany.m in Sources */,
+				034F7CAA229BBCB900740AFF /* SortOperationAction.m in Sources */,
 				034F7C5F229B84AE00740AFF /* CashContext.m in Sources */,
 				03F2EE1A21FFF5C400D03703 /* AbstractFactory.m in Sources */,
 				034F7C5B229B84AE00740AFF /* TestPaperA.m in Sources */,
@@ -1163,6 +1221,7 @@
 				034F7C38229B84AE00740AFF /* AccessDepartment.m in Sources */,
 				034F7C3A229B84AE00740AFF /* SqlserverUser.m in Sources */,
 				03F2EDF821FEE5CA00D03703 /* WechatPayProcessor.m in Sources */,
+				034F7CA4229BBBF800740AFF /* Sort.m in Sources */,
 				034F7C48229B84AE00740AFF /* PersonFatBuilder.m in Sources */,
 				03F2EE2921FFF8B000D03703 /* Product.m in Sources */,
 				034F7C5A229B84AE00740AFF /* TestPaperB.m in Sources */,
@@ -1170,6 +1229,7 @@
 				0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */,
 				034F7C64229B84AE00740AFF /* Work.m in Sources */,
 				034F7C55229B84AE00740AFF /* Boss.m in Sources */,
+				034F7CA7229BBC4E00740AFF /* AbstractOperation.m in Sources */,
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
 				03EF80A22264565D005EB4DE /* Node.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,

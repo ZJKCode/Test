@@ -9,7 +9,7 @@
 #import "CoreAnimationViewController.h"
 #import "CustomView.h"
 
-@interface CoreAnimationViewController ()
+@interface CoreAnimationViewController () <CAAnimationDelegate>
 
 @end
 
@@ -79,6 +79,15 @@
 
     // 给图层添加动画
     [cView.layer addAnimation:keyAnimation forKey:@"KCKeyAnimation_Positon"];
+
+}
+
+
+- (void)animationDidStart:(CAAnimation *)anim {
+
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
 
 }
 @end

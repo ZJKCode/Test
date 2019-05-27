@@ -11,7 +11,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJKDeviceMananger : NSObject
+
+/**
+ 是否是iPhoneX
+
+ @return YES 设备是iPhoneX NO
+ */
 + (BOOL)isiPhoneX;
+
++ (NSMutableArray *)getMonthList:(NSInteger)mothonNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

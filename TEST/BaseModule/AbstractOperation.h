@@ -1,18 +1,17 @@
 //
-//  DirectInsertSort.h
+//  AbstractOperation.h
 //  TEST
 //
-//  Created by zhangjikuan on 2019/4/15.
+//  Created by zhangjikuan on 2019/5/27.
 //  Copyright © 2019 winchannel. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
-#import <UIKit/UIKit.h>
+#import "OperationProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DirectInsertSort : NSObject
+@interface AbstractOperation : NSObject <OperationProtocol>
 
 @end
 

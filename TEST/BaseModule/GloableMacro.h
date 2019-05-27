@@ -15,6 +15,7 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define isiPhoneX [ZJKDeviceMananger isiPhoneX]
 #define kNaviBarHeight (isiPhoneX?88:64)
-
+#define kBottomDistanceHeight (isiPhoneX?34:0)
+#define kGetMonths(month) [ZJKDeviceMananger getMonthList:month]
 
 #endif /* GloableMacro_h */
