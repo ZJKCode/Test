@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "OperationProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GloableOperation : NSObject
+@interface GloableOperation : NSObject <OperationProtocol>
 
 
 /**

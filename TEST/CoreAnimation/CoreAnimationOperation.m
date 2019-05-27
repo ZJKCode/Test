@@ -11,6 +11,9 @@
 #import "CoreAnimationViewController.h"
 
 @implementation CoreAnimationOperation
+- (NSString *)operationTitle {
+    return  @"CoreAnimation 动画演示";
+}
 - (NSArray<NSString *> *)operations {
     return @[@"贝塞尔曲线动画"];
 }

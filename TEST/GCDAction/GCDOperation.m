@@ -15,6 +15,9 @@
 @end
 
 @implementation GCDOperation
+- (NSString *)operationTitle {
+    return @"GCD多线程演示";
+}
 - (NSArray<NSString *> *)operations {
   return @[@"syncConcurrent",
            @"asyncConcurrent",

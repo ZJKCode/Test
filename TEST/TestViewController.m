@@ -18,14 +18,14 @@
 #import "OperationProtocol.h"
 #import "CoreAnimationOperation.h"
 #import "HanoiTowerOperation.h"
+#import "DesignPatternOperation.h"
+
 #import <ZJKBaseSDK/WCSDK.h>
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
-@property (nonatomic, strong) GloableOperation *operation;
-@property (nonatomic, strong) GCDOperation *gcdOperation;
+@property (nonatomic, strong) NSMutableArray *titleArray;
+@property (nonatomic, strong) NSMutableArray *contentArray;
 @property (nonatomic, strong) NSMutableArray *operationClasses;
-@property (nonatomic, strong) CoreAnimationOperation *animationOperation;
-@property (nonatomic, strong) HanoiTowerOperation *hanoiOperation;
 
 @end
 
@@ -45,54 +45,19 @@
     NSMutableArray *arr = [[NSMutableArray alloc] initWithObjects:@(6), @(1),@(2),@(5),@(9),@(4),@(3),@(7),@(90),@(60),nil];
 
     [self quickSortArray:arr withLeftIndex:0 andRightIndex:arr.count - 1];
-
-    NSObject<ModuleProtocol> *instance = [Instancefactory instanceWithClassName:@"LoginViewController"];
-
-    [instance changePassword];
-
-    [self.view makeToast:@"the position is center" duration:10 position:CSToastPositionCenter];
-
-    WCSDKUser *user =  [[WCSDKUser alloc] init];
-    user.nickname = @"wanghiakl";
-
-    NSLog(@"nickName%@", user.nickname);
-
-    NSDictionary *dic = @{@"url":@"www.baidu.com",@"nickName":@"小百度"};
-
-    WCSDKUser *mode2 = [[WCSDKUser alloc] initWithDict:dic];
-
-    NSLog(@"mode2 %@",mode2.url);
-
-
-    NSArray *titleArr = @[@"NSOperation",
-                          @"GCDAction 研究",
-                          @"CoreAnimation",
-                          @"汉诺塔算法演示",
-                          ];
-    NSArray *contentArr = @[
-                            [self.operation operations],
-                            [self.gcdOperation operations],
-                            [self.animationOperation operations],
-                            [self.hanoiOperation operations],
-                            ];
-
-    CBGroupAndStreamView * silde = [[CBGroupAndStreamView alloc] initWithFrame:
-                                    CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
-    silde.delegate = self;
-    silde.radius = 10;
-    silde.font = [UIFont systemFontOfSize:12];
-    silde.titleTextFont = [UIFont systemFontOfSize:18];
-    silde.selColor = [UIColor orangeColor];
-    [silde setContentView:contentArr titleArr:titleArr];
-    [self.view addSubview:silde];
-    _menueView = silde;
-
-    [self.operationClasses addObject:self.operation];
-    [self.operationClasses addObject:self.gcdOperation];
-    [self.operationClasses addObject:self.animationOperation];
-    [self.operationClasses addObject:self.hanoiOperation];
+    [self addSubViews];
 }
 
+- (void) addSubViews {
+
+    [self addOperationClass:[GloableOperation class]];
+    [self addOperationClass:[GCDOperation class]];
+    [self addOperationClass:[CoreAnimationOperation class]];
+    [self addOperationClass:[HanoiTowerOperation class]];
+    [self addOperationClass:[DesignPatternOperation class]];
+
+    [self.view addSubview:self.menueView];
+}
 #pragma mark - CBGroupAndStreamViewDelegate
 - (void)cb_confirmReturnValue:(NSArray *)valueArr groupId:(NSArray *)groupIdArr{
     NSLog(@"valueArr = %@ \ngroupIdArr = %@",valueArr,groupIdArr);
@@ -102,6 +67,25 @@
     NSLog(@"value = %@----index = %ld------groupId = %ld",value,index,groupId);
     id <OperationProtocol> operation = self.operationClasses[groupId];
     [operation operationTarget:self WithIndex:index];
+}
+
+#pragma mark  create operations
+
+- (void) addOperationClass:(Class)class {
+    id <OperationProtocol> protocol = [self createOperation:class];
+
+    [self.titleArray addObject:protocol.operationTitle];
+
+    [self.contentArray addObject:protocol.operations];
+
+    [self.operationClasses addObject:protocol];
+}
+
+- (id <OperationProtocol> )createOperation:(Class)class {
+
+    id <OperationProtocol> operation = [[class alloc] init];
+
+    return operation;
 }
 
 - (NSArray *)pupSort:(NSArray *)list {
@@ -264,35 +248,39 @@
     [super viewDidLayoutSubviews];
 }
 
-- (GloableOperation *)operation {
-    if (!_operation) {
-        _operation = [[GloableOperation alloc] init];
+#pragma mark setter & getter
+- (CBGroupAndStreamView *)menueView {
+    if (!_menueView) {
+        CBGroupAndStreamView * silde = [[CBGroupAndStreamView alloc] initWithFrame:
+                                        CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+        silde.delegate = self;
+        silde.radius = 10;
+        silde.font = [UIFont systemFontOfSize:12];
+        silde.titleTextFont = [UIFont systemFontOfSize:18];
+        silde.selColor = [UIColor orangeColor];
+        [silde setContentView:self.contentArray titleArr:self.titleArray];
+        _menueView = silde;
     }
-    return _operation;
+    return _menueView;
 }
-- (GCDOperation *)gcdOperation {
-    if (!_gcdOperation) {
-        _gcdOperation = [[GCDOperation alloc] init];
-    }
-    return _gcdOperation;
-}
+
 - (NSMutableArray *)operationClasses {
     if (!_operationClasses) {
         _operationClasses = [NSMutableArray array];
     }
     return _operationClasses;
 }
-- (CoreAnimationOperation *)animationOperation {
-    if (!_animationOperation) {
-        _animationOperation = [[CoreAnimationOperation alloc] init];
+- (NSMutableArray *)titleArray {
+    if (!_titleArray) {
+        _titleArray = [NSMutableArray array];
     }
-    return _animationOperation;
+    return _titleArray;
 }
-- (HanoiTowerOperation *)hanoiOperation {
-    if (!_hanoiOperation) {
-        _hanoiOperation = [[HanoiTowerOperation alloc] init];
+- (NSMutableArray *)contentArray {
+    if (!_contentArray) {
+        _contentArray = [NSMutableArray array];
     }
+    return _contentArray;
+}
 
-    return _hanoiOperation;
-}
 @end

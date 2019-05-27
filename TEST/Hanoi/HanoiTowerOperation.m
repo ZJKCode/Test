@@ -9,6 +9,9 @@
 #import "HanoiTowerOperation.h"
 #import "RootViewController.h"
 @implementation HanoiTowerOperation
+- (NSString *)operationTitle {
+   return  @"汉诺塔算法演示";
+}
 - (NSArray<NSString *> *)operations {
     return  @[@"Hanoi"];
 }

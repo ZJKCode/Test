@@ -54,7 +54,9 @@
     [action initTicketStatusSave];
 
 }
-
+- (NSString *)operationTitle {
+    return @"NSOperation 线程";
+}
 - (NSArray<NSString *> *)operations {
     return @[@"1.useInvocationOperation",
              @"2.testAation",

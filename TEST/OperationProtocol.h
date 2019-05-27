@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol OperationProtocol <NSObject>
 @optional
+- (NSString *)operationTitle;
 - (NSArray <NSString *>*)operations;
 - (void)deal_opertationWithIndex:(NSInteger)index;
 - (void)operationTarget:(id)target WithIndex:(NSInteger)index;
