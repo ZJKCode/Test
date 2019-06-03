@@ -9,9 +9,9 @@
 			<string></string>
 			<key>taskOrder</key>
 			<integer>1</integer>
-			<key>taskSynType</key>
-			<string>0</string>
 			<key>taskType</key>
+			<string>0</string>
+			<key>taskSynType</key>
 			<string>0</string>
 			<key>taskReturnType</key>
 			<string>0</string>

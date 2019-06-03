@@ -70,6 +70,7 @@
         [self setNeedsDisplay];
     }
 }
+
 /** 开始触屏*/
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
@@ -79,23 +80,21 @@
     CGPoint pont = [myTouch locationInView:self];
     [self.bezierPath moveToPoint:pont];
     
-    NSMutableDictionary *tempDic = [[NSMutableDictionary alloc] initWithCapacity:3
-    ];
+    NSMutableDictionary *tempDic = [[NSMutableDictionary alloc] initWithCapacity:3];
     [tempDic setObject:self.color forKey:@"color"];
     [tempDic setObject:[NSNumber numberWithFloat:self.lineWidth] forKey:@"lineWidth"];
     [tempDic setObject:self.bezierPath forKey:@"line"];
     [self.allLine addObject:tempDic];
     
 }
+
 /** 触屏移动*/
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    
     [self.bezierPath addLineToPoint:point];
     [self setNeedsDisplay];
-
 }
 
 /** 触屏结束*/
@@ -103,7 +102,6 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    
     [self.bezierPath addLineToPoint:point];
     [self setNeedsDisplay];
 

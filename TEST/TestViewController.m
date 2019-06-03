@@ -113,7 +113,7 @@
         _titleArray = [NSMutableArray array];
     }
     return _titleArray;
-}
+ }
 - (NSMutableArray *)contentArray {
     if (!_contentArray) {
         _contentArray = [NSMutableArray array];
