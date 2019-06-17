@@ -23,6 +23,7 @@
 #import "BezierOperation.h"
 #import "SortOperationAction.h"
 #import "GloableMacro.h"
+#import "AutoReleasePoolOperation.h"
 
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
@@ -49,6 +50,7 @@
     [self addOperationClass:[DesignPatternOperation class]];
     [self addOperationClass:[BezierOperation class]];
     [self addOperationClass:[SortOperationAction class]];
+    [self addOperationClass:[AutoReleasePoolOperation class]];
 
     [self.view addSubview:self.menueView];
 }

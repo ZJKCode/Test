@@ -99,6 +99,8 @@
 		034F7CA4229BBBF800740AFF /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA3229BBBF800740AFF /* Sort.m */; };
 		034F7CA7229BBC4E00740AFF /* AbstractOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA6229BBC4E00740AFF /* AbstractOperation.m */; };
 		034F7CAA229BBCB900740AFF /* SortOperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA9229BBCB900740AFF /* SortOperationAction.m */; };
+		035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E376D22B370AF00CD99DE /* AutoRealsePool.m */; };
+		035E37A522B7830500CD99DE /* AutoReleasePoolOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */; };
 		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
 		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03862E3D2296750600CE815A /* GloableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3C2296750600CE815A /* GloableOperation.m */; };
@@ -164,7 +166,7 @@
 		0321AE8D219D668E002621A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0321AE8E219D668E002621A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0321AE91219D668E002621A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0321AE93219D6693002621A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0321AE93219D6693002621A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/zhangkuan/develop/dev_git/TEST/TEST/AppDelegate/Assets.xcassets; sourceTree = "<absolute>"; };
 		0321AE96219D6693002621A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0321AE98219D6693002621A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0321AE99219D6693002621A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -342,6 +344,10 @@
 		034F7CA6229BBC4E00740AFF /* AbstractOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractOperation.m; sourceTree = "<group>"; };
 		034F7CA8229BBCB900740AFF /* SortOperationAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortOperationAction.h; sourceTree = "<group>"; };
 		034F7CA9229BBCB900740AFF /* SortOperationAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortOperationAction.m; sourceTree = "<group>"; };
+		035E376C22B370AF00CD99DE /* AutoRealsePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoRealsePool.h; sourceTree = "<group>"; };
+		035E376D22B370AF00CD99DE /* AutoRealsePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRealsePool.m; sourceTree = "<group>"; };
+		035E37A322B7830500CD99DE /* AutoReleasePoolOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolOperation.h; sourceTree = "<group>"; };
+		035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolOperation.m; sourceTree = "<group>"; };
 		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
 		03862E3C2296750600CE815A /* GloableOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GloableOperation.m; sourceTree = "<group>"; };
@@ -557,6 +563,7 @@
 				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
+				035E376B22B3705E00CD99DE /* AutoRealeasePool */,
 			);
 			path = TEST;
 			sourceTree = "<group>";
@@ -884,6 +891,17 @@
 			path = 3thrd;
 			sourceTree = "<group>";
 		};
+		035E376B22B3705E00CD99DE /* AutoRealeasePool */ = {
+			isa = PBXGroup;
+			children = (
+				035E376C22B370AF00CD99DE /* AutoRealsePool.h */,
+				035E376D22B370AF00CD99DE /* AutoRealsePool.m */,
+				035E37A322B7830500CD99DE /* AutoReleasePoolOperation.h */,
+				035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */,
+			);
+			path = AutoRealeasePool;
+			sourceTree = "<group>";
+		};
 		03862E052294DBCD00CE815A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1145,6 +1163,7 @@
 			files = (
 				034F7B94229B7B1A00740AFF /* TowerViewController.m in Sources */,
 				034F7C62229B84AE00740AFF /* NoonState.m in Sources */,
+				035E37A522B7830500CD99DE /* AutoReleasePoolOperation.m in Sources */,
 				03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */,
 				03B7C82022019CBA004E08E5 /* HittestView.m in Sources */,
 				034F7C9F229BB3D200740AFF /* BezierOperation.m in Sources */,
@@ -1238,6 +1257,7 @@
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
 				0329718422A4BB30004CD8A2 /* CarDirect.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
+				035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */,
 				034F7C72229B84AE00740AFF /* VolunteerFactory.m in Sources */,
 				034F7C5D229B84AE00740AFF /* CashNomal.m in Sources */,
 				03862E4C22968F7200CE815A /* GCDOperation.m in Sources */,
