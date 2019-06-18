@@ -106,7 +106,7 @@
 		035E37DB22B8BA2700CD99DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D422B8BA2600CD99DE /* BaseViewController.swift */; };
 		035E37DC22B8BA2700CD99DE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */; };
 		035E37DD22B8BA2700CD99DE /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */; };
-		035E37DE22B8BA2700CD99DE /* SwiftPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D722B8BA2600CD99DE /* SwiftPro.swift */; };
+		035E37DE22B8BA2700CD99DE /* SwiftOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D722B8BA2600CD99DE /* SwiftOperation.swift */; };
 		035E37DF22B8BA2700CD99DE /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D822B8BA2600CD99DE /* BaseProtocol.swift */; };
 		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
 		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -361,7 +361,7 @@
 		035E37D422B8BA2600CD99DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
-		035E37D722B8BA2600CD99DE /* SwiftPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPro.swift; sourceTree = "<group>"; };
+		035E37D722B8BA2600CD99DE /* SwiftOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOperation.swift; sourceTree = "<group>"; };
 		035E37D822B8BA2600CD99DE /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
@@ -927,7 +927,7 @@
 				035E37D422B8BA2600CD99DE /* BaseViewController.swift */,
 				035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */,
 				035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */,
-				035E37D722B8BA2600CD99DE /* SwiftPro.swift */,
+				035E37D722B8BA2600CD99DE /* SwiftOperation.swift */,
 				035E37D822B8BA2600CD99DE /* BaseProtocol.swift */,
 			);
 			path = SwiftModule;
@@ -1297,7 +1297,7 @@
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
 				035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */,
 				034F7C72229B84AE00740AFF /* VolunteerFactory.m in Sources */,
-				035E37DE22B8BA2700CD99DE /* SwiftPro.swift in Sources */,
+				035E37DE22B8BA2700CD99DE /* SwiftOperation.swift in Sources */,
 				034F7C5D229B84AE00740AFF /* CashNomal.m in Sources */,
 				03862E4C22968F7200CE815A /* GCDOperation.m in Sources */,
 				03862E462296883A00CE815A /* UIView+CBExtension.m in Sources */,

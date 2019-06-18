@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwiftPro: NSObject ,OperationProtocol{
+class SwiftOperation: NSObject ,OperationProtocol{
     func operations() -> [String] {
         return ["swift"]
     }

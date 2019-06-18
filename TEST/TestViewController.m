@@ -52,7 +52,7 @@
     [self addOperationClass:[BezierOperation class]];
     [self addOperationClass:[SortOperationAction class]];
     [self addOperationClass:[AutoReleasePoolOperation class]];
-    [self addOperationClass:[SwiftPro class]];
+    [self addOperationClass:[SwiftOperation class]];
     [self.view addSubview:self.menueView];
 }
 #pragma mark - CBGroupAndStreamViewDelegate
