@@ -101,6 +101,13 @@
 		034F7CAA229BBCB900740AFF /* SortOperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA9229BBCB900740AFF /* SortOperationAction.m */; };
 		035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E376D22B370AF00CD99DE /* AutoRealsePool.m */; };
 		035E37A522B7830500CD99DE /* AutoReleasePoolOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */; };
+		035E37D922B8BA2700CD99DE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D222B8BA2600CD99DE /* Global.swift */; };
+		035E37DA22B8BA2700CD99DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D322B8BA2600CD99DE /* ListViewController.swift */; };
+		035E37DB22B8BA2700CD99DE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D422B8BA2600CD99DE /* BaseViewController.swift */; };
+		035E37DC22B8BA2700CD99DE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */; };
+		035E37DD22B8BA2700CD99DE /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */; };
+		035E37DE22B8BA2700CD99DE /* SwiftPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D722B8BA2600CD99DE /* SwiftPro.swift */; };
+		035E37DF22B8BA2700CD99DE /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D822B8BA2600CD99DE /* BaseProtocol.swift */; };
 		03862E062294DBCD00CE815A /* iToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; };
 		03862E082294DC6E00CE815A /* iToast.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03862E032294DB6700CE815A /* iToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03862E3D2296750600CE815A /* GloableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862E3C2296750600CE815A /* GloableOperation.m */; };
@@ -348,6 +355,14 @@
 		035E376D22B370AF00CD99DE /* AutoRealsePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRealsePool.m; sourceTree = "<group>"; };
 		035E37A322B7830500CD99DE /* AutoReleasePoolOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolOperation.h; sourceTree = "<group>"; };
 		035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleasePoolOperation.m; sourceTree = "<group>"; };
+		035E37CE22B8B92600CD99DE /* TEST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TEST-Bridging-Header.h"; sourceTree = "<group>"; };
+		035E37D222B8BA2600CD99DE /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		035E37D322B8BA2600CD99DE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		035E37D422B8BA2600CD99DE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		035E37D722B8BA2600CD99DE /* SwiftPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPro.swift; sourceTree = "<group>"; };
+		035E37D822B8BA2600CD99DE /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		03862E032294DB6700CE815A /* iToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iToast.framework; sourceTree = "<group>"; };
 		03862E3B2296750600CE815A /* GloableOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloableOperation.h; sourceTree = "<group>"; };
 		03862E3C2296750600CE815A /* GloableOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GloableOperation.m; sourceTree = "<group>"; };
@@ -541,6 +556,7 @@
 		0321AE89219D668E002621A8 /* TEST */ = {
 			isa = PBXGroup;
 			children = (
+				035E37D122B8BA2600CD99DE /* SwiftModule */,
 				03862E032294DB6700CE815A /* iToast.framework */,
 				034F7CAB229BC90E00740AFF /* 3thrd */,
 				03862E3A22966E3D00CE815A /* AppDelegate */,
@@ -564,6 +580,7 @@
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
 				035E376B22B3705E00CD99DE /* AutoRealeasePool */,
+				035E37CE22B8B92600CD99DE /* TEST-Bridging-Header.h */,
 			);
 			path = TEST;
 			sourceTree = "<group>";
@@ -902,6 +919,20 @@
 			path = AutoRealeasePool;
 			sourceTree = "<group>";
 		};
+		035E37D122B8BA2600CD99DE /* SwiftModule */ = {
+			isa = PBXGroup;
+			children = (
+				035E37D222B8BA2600CD99DE /* Global.swift */,
+				035E37D322B8BA2600CD99DE /* ListViewController.swift */,
+				035E37D422B8BA2600CD99DE /* BaseViewController.swift */,
+				035E37D522B8BA2600CD99DE /* BaseTableViewCell.swift */,
+				035E37D622B8BA2600CD99DE /* ListTableViewCell.swift */,
+				035E37D722B8BA2600CD99DE /* SwiftPro.swift */,
+				035E37D822B8BA2600CD99DE /* BaseProtocol.swift */,
+			);
+			path = SwiftModule;
+			sourceTree = "<group>";
+		};
 		03862E052294DBCD00CE815A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1076,6 +1107,7 @@
 				TargetAttributes = {
 					0321AE86219D668E002621A8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -1181,6 +1213,7 @@
 				034F7C37229B84AE00740AFF /* User.m in Sources */,
 				034F7C6B229B84AE00740AFF /* OperationMul.m in Sources */,
 				03F2EE1D21FFF5EF00D03703 /* ConstractFactoryA.m in Sources */,
+				035E37DC22B8BA2700CD99DE /* BaseTableViewCell.swift in Sources */,
 				034F7C67229B84AE00740AFF /* EveningState.m in Sources */,
 				03F2EE2021FFF5FF00D03703 /* ConstractFactoryB.m in Sources */,
 				0321AE8F219D668E002621A8 /* ViewController.m in Sources */,
@@ -1199,6 +1232,7 @@
 				034F7C36229B84AE00740AFF /* AccessFactory.m in Sources */,
 				034F7C44229B84AE00740AFF /* Resume.m in Sources */,
 				034F7C4C229B84AE00740AFF /* Realty1.m in Sources */,
+				035E37DA22B8BA2700CD99DE /* ListViewController.swift in Sources */,
 				034F7C68229B84AE00740AFF /* OperationDiv.m in Sources */,
 				03862E4022967ACD00CE815A /* CustomOperation.m in Sources */,
 				034F7C51229B84AE00740AFF /* StockObserver.m in Sources */,
@@ -1210,7 +1244,9 @@
 				034F7C4D229B84AE00740AFF /* NationalDebt1.m in Sources */,
 				034F7C41229B84AE00740AFF /* Pursuit.m in Sources */,
 				034F7C40229B84AE00740AFF /* SchoolGirl.m in Sources */,
+				035E37DB22B8BA2700CD99DE /* BaseViewController.swift in Sources */,
 				03862E54229696C500CE815A /* CoreAnimationViewController.m in Sources */,
+				035E37D922B8BA2700CD99DE /* Global.swift in Sources */,
 				034F7C42229B84AE00740AFF /* ResumeShallowCopy.m in Sources */,
 				03F2EDF521FEE5B500D03703 /* AliPayProcessor.m in Sources */,
 				03F2EDFE21FEF0F600D03703 /* Car.m in Sources */,
@@ -1228,6 +1264,7 @@
 				034F7C4A229B84AE00740AFF /* Fund.m in Sources */,
 				034F7C6C229B84AE00740AFF /* OperationSub.m in Sources */,
 				034F7C4E229B84AE00740AFF /* Stock1.m in Sources */,
+				035E37DF22B8BA2700CD99DE /* BaseProtocol.swift in Sources */,
 				0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */,
 				034F7C43229B84AE00740AFF /* WorkExperience.m in Sources */,
 				034F7C69229B84AE00740AFF /* Operation.m in Sources */,
@@ -1241,6 +1278,7 @@
 				034F7C5B229B84AE00740AFF /* TestPaperA.m in Sources */,
 				03EF80A92266C10A005EB4DE /* CustomView.m in Sources */,
 				034F7C56229B84AE00740AFF /* NBAObserver.m in Sources */,
+				035E37DD22B8BA2700CD99DE /* ListTableViewCell.swift in Sources */,
 				034F7C3C229B84AE00740AFF /* DataAccess.m in Sources */,
 				034F7C38229B84AE00740AFF /* AccessDepartment.m in Sources */,
 				034F7C3A229B84AE00740AFF /* SqlserverUser.m in Sources */,
@@ -1259,6 +1297,7 @@
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
 				035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */,
 				034F7C72229B84AE00740AFF /* VolunteerFactory.m in Sources */,
+				035E37DE22B8BA2700CD99DE /* SwiftPro.swift in Sources */,
 				034F7C5D229B84AE00740AFF /* CashNomal.m in Sources */,
 				03862E4C22968F7200CE815A /* GCDOperation.m in Sources */,
 				03862E462296883A00CE815A /* UIView+CBExtension.m in Sources */,
@@ -1341,6 +1380,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1400,6 +1440,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1423,6 +1464,7 @@
 			baseConfigurationReference = A23E09F2107546A69FAEF2C8 /* Pods-TEST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WW69WRWC7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1436,6 +1478,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winchannel.TEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TEST/TEST-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1445,6 +1490,7 @@
 			baseConfigurationReference = B80E1107B03910F48E594DC2 /* Pods-TEST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WW69WRWC7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1458,6 +1504,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winchannel.TEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TEST/TEST-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
