@@ -25,6 +25,7 @@
 #import "GloableMacro.h"
 #import "AutoReleasePoolOperation.h"
 #import "TEST-Swift.h"
+#import "DiceOperation.h"
 
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
@@ -53,6 +54,7 @@
     [self addOperationClass:[SortOperationAction class]];
     [self addOperationClass:[AutoReleasePoolOperation class]];
     [self addOperationClass:[SwiftOperation class]];
+    [self addOperationClass:[DiceOperation class]];
     [self.view addSubview:self.menueView];
 }
 #pragma mark - CBGroupAndStreamViewDelegate

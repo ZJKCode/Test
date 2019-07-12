@@ -8,16 +8,22 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+public class BaseViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         configUI();
     }
         
     /// configUI
-    func configUI() {
+    public func configUI() {
 
     }
+}
 
+class BaseViewController2: BaseViewController {
+
+    override func configUI() {
+
+    }
 }

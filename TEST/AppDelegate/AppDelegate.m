@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TestViewController.h"
 #import "GloableOperation.h"
+#import "DiceM.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,13 @@
 
 @implementation AppDelegate
 
+- (void)testDiceM {
+    DiceM *d = [DiceM shareInstance];
+    for (int i = 0; i < 100; i++) {
+        [d runRandom];
+    }
 
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     printf("sizeof : int = %lu, long = %lu, long long = %lu\n", sizeof(int), sizeof(long), sizeof(long long));
@@ -26,6 +33,7 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    [self testDiceM];
     return YES;
 }
 
@@ -34,4 +42,5 @@
 
     [operation deal_OperationClass];
 }
+
 @end

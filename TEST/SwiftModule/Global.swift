@@ -29,9 +29,16 @@ private func _topVC(_ vc: UIViewController?) -> UIViewController? {
 
 func showAlert(_ message: String) {
     let alert = UIAlertController(title: "提示", message: message, preferredStyle: .alert)
-    let alertAction = UIAlertAction(title: "OK", style: .cancel) { (UIAlertAction) -> Void in
+    let alertAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) -> Void in
         alert.dismiss(animated: true, completion: nil
         )}
+    let sureAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) -> Void in
+        alert.dismiss(animated: true, completion: { () -> Void in
+            print("finished")
+        })
+    }
+
+    alert.addAction(sureAction)
     alert.addAction(alertAction)
     topVC!.present(alert, animated: true, completion: nil)
 }

@@ -32,13 +32,12 @@ class ListViewController: BaseViewController {
         super.viewDidLoad()
     }
 
-
-    override func configUI () {
+    override func configUI() {
         view.backgroundColor = UIColor.white
         title = "swift test list"
         view.addSubview(tableView)
     }
-
+    
 }
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {

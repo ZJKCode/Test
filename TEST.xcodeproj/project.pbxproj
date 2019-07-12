@@ -11,6 +11,13 @@
 		0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD26226D8F14004B0198 /* WCAbstractTask.m */; };
 		0306FD2A226D92EB004B0198 /* WCTaskExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306FD29226D92EB004B0198 /* WCTaskExecutor.m */; };
 		0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310B1A0221AC069003BCA03 /* TestViewController.m */; };
+		0318702C22D730D4003FC173 /* DiceM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318702B22D730D4003FC173 /* DiceM.m */; };
+		0318702F22D73580003FC173 /* DiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318702E22D73580003FC173 /* DiceModel.m */; };
+		0318703222D7369A003FC173 /* DiceSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703122D7369A003FC173 /* DiceSingle.m */; };
+		0318703522D738FF003FC173 /* DiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703422D738FF003FC173 /* DiceViewController.m */; };
+		0318703822D73C7B003FC173 /* DiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703722D73C7B003FC173 /* DiceOperation.m */; };
+		0318703B22D8215D003FC173 /* DiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703A22D8215D003FC173 /* DiceTableViewCell.m */; };
+		0318703E22D825CF003FC173 /* DiceTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703D22D825CF003FC173 /* DiceTerm.m */; };
 		0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8B219D668E002621A8 /* AppDelegate.m */; };
 		0321AE8F219D668E002621A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8E219D668E002621A8 /* ViewController.m */; };
 		0321AE92219D668E002621A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0321AE90219D668E002621A8 /* Main.storyboard */; };
@@ -21,6 +28,7 @@
 		0329718822A4BD67004CD8A2 /* DaCarCarBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329718722A4BD67004CD8A2 /* DaCarCarBuild.m */; };
 		0329718B22A4BD74004CD8A2 /* XiaoCarCarBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329718A22A4BD74004CD8A2 /* XiaoCarCarBuild.m */; };
 		0334F68E22117B5300CD89FB /* RandomMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334F68D22117B5300CD89FB /* RandomMoney.m */; };
+		0341DC1E22BB275F0070C137 /* 数据结构预算法笔记 in Resources */ = {isa = PBXBuildFile; fileRef = 0341DC1D22BB275F0070C137 /* 数据结构预算法笔记 */; };
 		034F7B92229B7B1A00740AFF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8A229B7B1900740AFF /* RootViewController.m */; };
 		034F7B93229B7B1A00740AFF /* DiskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8C229B7B1A00740AFF /* DiskView.m */; };
 		034F7B94229B7B1A00740AFF /* TowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7B8E229B7B1A00740AFF /* TowerViewController.m */; };
@@ -167,6 +175,20 @@
 		0306FD29226D92EB004B0198 /* WCTaskExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCTaskExecutor.m; sourceTree = "<group>"; };
 		0310B19F221AC069003BCA03 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0310B1A0221AC069003BCA03 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		0318702A22D730D4003FC173 /* DiceM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceM.h; sourceTree = "<group>"; };
+		0318702B22D730D4003FC173 /* DiceM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceM.m; sourceTree = "<group>"; };
+		0318702D22D73580003FC173 /* DiceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceModel.h; sourceTree = "<group>"; };
+		0318702E22D73580003FC173 /* DiceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceModel.m; sourceTree = "<group>"; };
+		0318703022D7369A003FC173 /* DiceSingle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceSingle.h; sourceTree = "<group>"; };
+		0318703122D7369A003FC173 /* DiceSingle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceSingle.m; sourceTree = "<group>"; };
+		0318703322D738FF003FC173 /* DiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceViewController.h; sourceTree = "<group>"; };
+		0318703422D738FF003FC173 /* DiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceViewController.m; sourceTree = "<group>"; };
+		0318703622D73C7B003FC173 /* DiceOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceOperation.h; sourceTree = "<group>"; };
+		0318703722D73C7B003FC173 /* DiceOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceOperation.m; sourceTree = "<group>"; };
+		0318703922D8215D003FC173 /* DiceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceTableViewCell.h; sourceTree = "<group>"; };
+		0318703A22D8215D003FC173 /* DiceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceTableViewCell.m; sourceTree = "<group>"; };
+		0318703C22D825CF003FC173 /* DiceTerm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceTerm.h; sourceTree = "<group>"; };
+		0318703D22D825CF003FC173 /* DiceTerm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceTerm.m; sourceTree = "<group>"; };
 		0321AE87219D668E002621A8 /* TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0321AE8A219D668E002621A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0321AE8B219D668E002621A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +208,7 @@
 		0329718A22A4BD74004CD8A2 /* XiaoCarCarBuild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaoCarCarBuild.m; sourceTree = "<group>"; };
 		0334F68C22117B5300CD89FB /* RandomMoney.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomMoney.h; sourceTree = "<group>"; };
 		0334F68D22117B5300CD89FB /* RandomMoney.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomMoney.m; sourceTree = "<group>"; };
+		0341DC1D22BB275F0070C137 /* 数据结构预算法笔记 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "数据结构预算法笔记"; sourceTree = "<group>"; };
 		034F7B8A229B7B1900740AFF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		034F7B8B229B7B1900740AFF /* TowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerViewController.h; sourceTree = "<group>"; };
 		034F7B8C229B7B1A00740AFF /* DiskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskView.m; sourceTree = "<group>"; };
@@ -492,6 +515,27 @@
 			path = TaskImpl;
 			sourceTree = "<group>";
 		};
+		0318702922D73098003FC173 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				0318702A22D730D4003FC173 /* DiceM.h */,
+				0318702B22D730D4003FC173 /* DiceM.m */,
+				0318703022D7369A003FC173 /* DiceSingle.h */,
+				0318703122D7369A003FC173 /* DiceSingle.m */,
+				0318702D22D73580003FC173 /* DiceModel.h */,
+				0318702E22D73580003FC173 /* DiceModel.m */,
+				0318703322D738FF003FC173 /* DiceViewController.h */,
+				0318703422D738FF003FC173 /* DiceViewController.m */,
+				0318703922D8215D003FC173 /* DiceTableViewCell.h */,
+				0318703A22D8215D003FC173 /* DiceTableViewCell.m */,
+				0318703622D73C7B003FC173 /* DiceOperation.h */,
+				0318703722D73C7B003FC173 /* DiceOperation.m */,
+				0318703C22D825CF003FC173 /* DiceTerm.h */,
+				0318703D22D825CF003FC173 /* DiceTerm.m */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
 		0320CE0922A1257100685F28 /* Pay */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,11 +618,13 @@
 				03862E4822968E7300CE815A /* NSOperationActions */,
 				03862E3922966DFC00CE815A /* RandomRedpackage */,
 				0306FD20226D8E5C004B0198 /* TaskModule */,
-				0310B19F221AC069003BCA03 /* TestViewController.h */,
+				0318702922D73098003FC173 /* Dice */,
 				0310B1A0221AC069003BCA03 /* TestViewController.m */,
+				0310B19F221AC069003BCA03 /* TestViewController.h */,
 				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
+				0341DC1D22BB275F0070C137 /* 数据结构预算法笔记 */,
 				035E376B22B3705E00CD99DE /* AutoRealeasePool */,
 				035E37CE22B8B92600CD99DE /* TEST-Bridging-Header.h */,
 			);
@@ -1136,6 +1182,7 @@
 			files = (
 				034F7C3B229B84AE00740AFF /* 屏幕快照 2016-09-22 14.47.30.png in Resources */,
 				0321AE97219D6693002621A8 /* LaunchScreen.storyboard in Resources */,
+				0341DC1E22BB275F0070C137 /* 数据结构预算法笔记 in Resources */,
 				0321AE94219D6693002621A8 /* Assets.xcassets in Resources */,
 				034F7C50229B84AE00740AFF /* 屏幕快照 2016-09-22 11.34.53.png in Resources */,
 				0306FD1F226D8CFF004B0198 /* StartTask.plist in Resources */,
@@ -1201,9 +1248,11 @@
 				034F7C9F229BB3D200740AFF /* BezierOperation.m in Sources */,
 				0329718B22A4BD74004CD8A2 /* XiaoCarCarBuild.m in Sources */,
 				034F7B92229B7B1A00740AFF /* RootViewController.m in Sources */,
+				0318703522D738FF003FC173 /* DiceViewController.m in Sources */,
 				0329718822A4BD67004CD8A2 /* DaCarCarBuild.m in Sources */,
 				034F7C4B229B84AE00740AFF /* Stock3.m in Sources */,
 				034F7C6A229B84AE00740AFF /* OperationFactory.m in Sources */,
+				0318702F22D73580003FC173 /* DiceModel.m in Sources */,
 				034F7C39229B84AE00740AFF /* AccessUser.m in Sources */,
 				03F2EDF121FEE56C00D03703 /* PayHelper.m in Sources */,
 				034F7B98229B7B8300740AFF /* HanoiTowerOperation.m in Sources */,
@@ -1222,6 +1271,7 @@
 				03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */,
 				03F2EE2321FFF89E00D03703 /* Builder.m in Sources */,
 				03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */,
+				0318703B22D8215D003FC173 /* DiceTableViewCell.m in Sources */,
 				034F7C71229B84AE00740AFF /* Volunteer.m in Sources */,
 				034F7C9C229BB19F00740AFF /* ZJKBezierViewController.m in Sources */,
 				0321AE9A219D6693002621A8 /* main.m in Sources */,
@@ -1230,11 +1280,13 @@
 				034F7C5E229B84AE00740AFF /* CashReturn.m in Sources */,
 				03862E3D2296750600CE815A /* GloableOperation.m in Sources */,
 				034F7C36229B84AE00740AFF /* AccessFactory.m in Sources */,
+				0318703E22D825CF003FC173 /* DiceTerm.m in Sources */,
 				034F7C44229B84AE00740AFF /* Resume.m in Sources */,
 				034F7C4C229B84AE00740AFF /* Realty1.m in Sources */,
 				035E37DA22B8BA2700CD99DE /* ListViewController.swift in Sources */,
 				034F7C68229B84AE00740AFF /* OperationDiv.m in Sources */,
 				03862E4022967ACD00CE815A /* CustomOperation.m in Sources */,
+				0318703822D73C7B003FC173 /* DiceOperation.m in Sources */,
 				034F7C51229B84AE00740AFF /* StockObserver.m in Sources */,
 				03FD1EAC223271F700CC2DE2 /* OperationAction.m in Sources */,
 				034F7C61229B84AE00740AFF /* SleepingState.m in Sources */,
@@ -1293,6 +1345,7 @@
 				034F7C55229B84AE00740AFF /* Boss.m in Sources */,
 				034F7CA7229BBC4E00740AFF /* AbstractOperation.m in Sources */,
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
+				0318702C22D730D4003FC173 /* DiceM.m in Sources */,
 				0329718422A4BB30004CD8A2 /* CarDirect.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
 				035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */,
@@ -1305,6 +1358,7 @@
 				03F2EE1421FF110600D03703 /* Person.m in Sources */,
 				034F7C59229B84AE00740AFF /* Company1.m in Sources */,
 				034F7C74229B84AE00740AFF /* ConcreteComponent.m in Sources */,
+				0318703222D7369A003FC173 /* DiceSingle.m in Sources */,
 				034F7C70229B84AE00740AFF /* UndergraduateFactory.m in Sources */,
 				03F2EE0A21FF058900D03703 /* Car2.m in Sources */,
 				034F7C52229B84AE00740AFF /* Secretary.m in Sources */,
