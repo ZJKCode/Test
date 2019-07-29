@@ -94,7 +94,7 @@
      */
 }
 
-// 同步 + 并发 任务
+// 异步 + 并发 任务
 - (void)asyncConcurrent {
 
     NSLog(@"currentThread---%@",[NSThread currentThread]);  // 打印当前线程
@@ -204,6 +204,8 @@
             NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
         }
     });
+
+    [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
 
     NSLog(@"syncConcurrent---end");
 

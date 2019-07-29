@@ -26,6 +26,7 @@
 #import "AutoReleasePoolOperation.h"
 #import "TEST-Swift.h"
 #import "DiceOperation.h"
+#import "FiveMTest.h"
 
 @interface TestViewController ()<CBGroupAndStreamDelegate>
 @property (strong, nonatomic) CBGroupAndStreamView * menueView;
@@ -40,6 +41,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+//
+//    for (int i = 0; i < 100; i++) {
+//        NSInteger random = arc4random() % 10 ;
+//        NSString *test = [[FiveMTest shareInstance] calculateNextWillShow:random];
+//        NSLog(@"%@", test);
+//    }
+
+    // 贪婪，动态规划，回溯 ，分支界定，分而治之
+
+
+    NSString *test = [[FiveMTest shareInstance] calculateNextWillShow:9];
+    NSLog(@"%@", test);
     [self addSubViews];
 }
 

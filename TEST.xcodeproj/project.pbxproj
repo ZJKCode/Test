@@ -18,6 +18,14 @@
 		0318703822D73C7B003FC173 /* DiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703722D73C7B003FC173 /* DiceOperation.m */; };
 		0318703B22D8215D003FC173 /* DiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703A22D8215D003FC173 /* DiceTableViewCell.m */; };
 		0318703E22D825CF003FC173 /* DiceTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0318703D22D825CF003FC173 /* DiceTerm.m */; };
+		03218E8222E549EE00F3068C /* PartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E8122E549EE00F3068C /* PartTimeViewController.m */; };
+		03218E8522E54AFA00F3068C /* PartTimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E8422E54AFA00F3068C /* PartTimeOperation.m */; };
+		03218E8822E5576E00F3068C /* PartTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E8722E5576E00F3068C /* PartTimeModel.m */; };
+		03218E8C22E59CB500F3068C /* FiveMTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E8B22E59CB500F3068C /* FiveMTest.m */; };
+		03218E9022E855D000F3068C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E8F22E855D000F3068C /* Employee.m */; };
+		03218E9322E8563200F3068C /* SubEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E9222E8563200F3068C /* SubEmployee.m */; };
+		03218E9622E8568900F3068C /* SubCompanyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E9522E8568900F3068C /* SubCompanyManager.m */; };
+		03218E9922E858EF00F3068C /* CompanyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03218E9822E858EF00F3068C /* CompanyManager.m */; };
 		0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8B219D668E002621A8 /* AppDelegate.m */; };
 		0321AE8F219D668E002621A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321AE8E219D668E002621A8 /* ViewController.m */; };
 		0321AE92219D668E002621A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0321AE90219D668E002621A8 /* Main.storyboard */; };
@@ -107,6 +115,7 @@
 		034F7CA4229BBBF800740AFF /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA3229BBBF800740AFF /* Sort.m */; };
 		034F7CA7229BBC4E00740AFF /* AbstractOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA6229BBC4E00740AFF /* AbstractOperation.m */; };
 		034F7CAA229BBCB900740AFF /* SortOperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F7CA9229BBCB900740AFF /* SortOperationAction.m */; };
+		035740F322DC143A00960B45 /* DiceWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035740F222DC143A00960B45 /* DiceWebViewController.m */; };
 		035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E376D22B370AF00CD99DE /* AutoRealsePool.m */; };
 		035E37A522B7830500CD99DE /* AutoReleasePoolOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E37A422B7830500CD99DE /* AutoReleasePoolOperation.m */; };
 		035E37D922B8BA2700CD99DE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E37D222B8BA2600CD99DE /* Global.swift */; };
@@ -129,6 +138,9 @@
 		03884ABC2223E2F70000E9C4 /* ProductB.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABB2223E2F70000E9C4 /* ProductB.m */; };
 		03884ABF2223E6050000E9C4 /* GCDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03884ABE2223E6050000E9C4 /* GCDAction.m */; };
 		03B7C82022019CBA004E08E5 /* HittestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7C81F22019CBA004E08E5 /* HittestView.m */; };
+		03DE7CC022EEE4620031D30D /* DiceStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE7CBF22EEE4620031D30D /* DiceStrategy.m */; };
+		03DE7CC322EEF41C0031D30D /* Multiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE7CC222EEF41C0031D30D /* Multiple.m */; };
+		03DE7CC622EEF76A0031D30D /* IndexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE7CC522EEF76A0031D30D /* IndexTool.m */; };
 		03EF80A522645CE5005EB4DE /* DirectInsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A422645CE5005EB4DE /* DirectInsertSort.m */; };
 		03EF80A92266C10A005EB4DE /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF80A82266C10A005EB4DE /* CustomView.m */; };
 		03F2EDC821FE9D4100D03703 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F2EDC721FE9D4100D03703 /* Calculator.m */; };
@@ -189,6 +201,22 @@
 		0318703A22D8215D003FC173 /* DiceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceTableViewCell.m; sourceTree = "<group>"; };
 		0318703C22D825CF003FC173 /* DiceTerm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceTerm.h; sourceTree = "<group>"; };
 		0318703D22D825CF003FC173 /* DiceTerm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceTerm.m; sourceTree = "<group>"; };
+		03218E8022E549EE00F3068C /* PartTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartTimeViewController.h; sourceTree = "<group>"; };
+		03218E8122E549EE00F3068C /* PartTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartTimeViewController.m; sourceTree = "<group>"; };
+		03218E8322E54AFA00F3068C /* PartTimeOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartTimeOperation.h; sourceTree = "<group>"; };
+		03218E8422E54AFA00F3068C /* PartTimeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartTimeOperation.m; sourceTree = "<group>"; };
+		03218E8622E5576E00F3068C /* PartTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartTimeModel.h; sourceTree = "<group>"; };
+		03218E8722E5576E00F3068C /* PartTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartTimeModel.m; sourceTree = "<group>"; };
+		03218E8A22E59CB500F3068C /* FiveMTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveMTest.h; sourceTree = "<group>"; };
+		03218E8B22E59CB500F3068C /* FiveMTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveMTest.m; sourceTree = "<group>"; };
+		03218E8E22E855D000F3068C /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		03218E8F22E855D000F3068C /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		03218E9122E8563200F3068C /* SubEmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubEmployee.h; sourceTree = "<group>"; };
+		03218E9222E8563200F3068C /* SubEmployee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubEmployee.m; sourceTree = "<group>"; };
+		03218E9422E8568900F3068C /* SubCompanyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCompanyManager.h; sourceTree = "<group>"; };
+		03218E9522E8568900F3068C /* SubCompanyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCompanyManager.m; sourceTree = "<group>"; };
+		03218E9722E858EF00F3068C /* CompanyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyManager.h; sourceTree = "<group>"; };
+		03218E9822E858EF00F3068C /* CompanyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyManager.m; sourceTree = "<group>"; };
 		0321AE87219D668E002621A8 /* TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0321AE8A219D668E002621A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0321AE8B219D668E002621A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -374,6 +402,8 @@
 		034F7CA6229BBC4E00740AFF /* AbstractOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractOperation.m; sourceTree = "<group>"; };
 		034F7CA8229BBCB900740AFF /* SortOperationAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortOperationAction.h; sourceTree = "<group>"; };
 		034F7CA9229BBCB900740AFF /* SortOperationAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortOperationAction.m; sourceTree = "<group>"; };
+		035740F122DC143A00960B45 /* DiceWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceWebViewController.h; sourceTree = "<group>"; };
+		035740F222DC143A00960B45 /* DiceWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceWebViewController.m; sourceTree = "<group>"; };
 		035E376C22B370AF00CD99DE /* AutoRealsePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoRealsePool.h; sourceTree = "<group>"; };
 		035E376D22B370AF00CD99DE /* AutoRealsePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRealsePool.m; sourceTree = "<group>"; };
 		035E37A322B7830500CD99DE /* AutoReleasePoolOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleasePoolOperation.h; sourceTree = "<group>"; };
@@ -411,6 +441,12 @@
 		03884ABE2223E6050000E9C4 /* GCDAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAction.m; sourceTree = "<group>"; };
 		03B7C81E22019CBA004E08E5 /* HittestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HittestView.h; sourceTree = "<group>"; };
 		03B7C81F22019CBA004E08E5 /* HittestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HittestView.m; sourceTree = "<group>"; };
+		03DE7CBE22EEE4620031D30D /* DiceStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceStrategy.h; sourceTree = "<group>"; };
+		03DE7CBF22EEE4620031D30D /* DiceStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceStrategy.m; sourceTree = "<group>"; };
+		03DE7CC122EEF41C0031D30D /* Multiple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Multiple.h; sourceTree = "<group>"; };
+		03DE7CC222EEF41C0031D30D /* Multiple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Multiple.m; sourceTree = "<group>"; };
+		03DE7CC422EEF76A0031D30D /* IndexTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexTool.h; sourceTree = "<group>"; };
+		03DE7CC522EEF76A0031D30D /* IndexTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexTool.m; sourceTree = "<group>"; };
 		03EF80A322645CE5005EB4DE /* DirectInsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectInsertSort.h; sourceTree = "<group>"; };
 		03EF80A422645CE5005EB4DE /* DirectInsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectInsertSort.m; sourceTree = "<group>"; };
 		03EF80A72266C10A005EB4DE /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
@@ -526,12 +562,22 @@
 				0318702E22D73580003FC173 /* DiceModel.m */,
 				0318703322D738FF003FC173 /* DiceViewController.h */,
 				0318703422D738FF003FC173 /* DiceViewController.m */,
+				03DE7CC422EEF76A0031D30D /* IndexTool.h */,
+				03DE7CC522EEF76A0031D30D /* IndexTool.m */,
+				03DE7CC122EEF41C0031D30D /* Multiple.h */,
+				03DE7CC222EEF41C0031D30D /* Multiple.m */,
+				03DE7CBE22EEE4620031D30D /* DiceStrategy.h */,
+				03DE7CBF22EEE4620031D30D /* DiceStrategy.m */,
+				035740F122DC143A00960B45 /* DiceWebViewController.h */,
+				035740F222DC143A00960B45 /* DiceWebViewController.m */,
 				0318703922D8215D003FC173 /* DiceTableViewCell.h */,
 				0318703A22D8215D003FC173 /* DiceTableViewCell.m */,
 				0318703622D73C7B003FC173 /* DiceOperation.h */,
 				0318703722D73C7B003FC173 /* DiceOperation.m */,
 				0318703C22D825CF003FC173 /* DiceTerm.h */,
 				0318703D22D825CF003FC173 /* DiceTerm.m */,
+				03218E8A22E59CB500F3068C /* FiveMTest.h */,
+				03218E8B22E59CB500F3068C /* FiveMTest.m */,
 			);
 			path = Dice;
 			sourceTree = "<group>";
@@ -548,6 +594,14 @@
 				03F2EDF421FEE5B500D03703 /* AliPayProcessor.m */,
 				03F2EDF621FEE5CA00D03703 /* WechatPayProcessor.h */,
 				03F2EDF721FEE5CA00D03703 /* WechatPayProcessor.m */,
+				03218E8E22E855D000F3068C /* Employee.h */,
+				03218E8F22E855D000F3068C /* Employee.m */,
+				03218E9122E8563200F3068C /* SubEmployee.h */,
+				03218E9222E8563200F3068C /* SubEmployee.m */,
+				03218E9422E8568900F3068C /* SubCompanyManager.h */,
+				03218E9522E8568900F3068C /* SubCompanyManager.m */,
+				03218E9722E858EF00F3068C /* CompanyManager.h */,
+				03218E9822E858EF00F3068C /* CompanyManager.m */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -577,6 +631,19 @@
 				03F2EE1621FF11A800D03703 /* WorkerInPetrolStation.m */,
 			);
 			path = Car;
+			sourceTree = "<group>";
+		};
+		03218E7F22E549C300F3068C /* PartTimeJob */ = {
+			isa = PBXGroup;
+			children = (
+				03218E8022E549EE00F3068C /* PartTimeViewController.h */,
+				03218E8122E549EE00F3068C /* PartTimeViewController.m */,
+				03218E8622E5576E00F3068C /* PartTimeModel.h */,
+				03218E8722E5576E00F3068C /* PartTimeModel.m */,
+				03218E8322E54AFA00F3068C /* PartTimeOperation.h */,
+				03218E8422E54AFA00F3068C /* PartTimeOperation.m */,
+			);
+			path = PartTimeJob;
 			sourceTree = "<group>";
 		};
 		0321AE7E219D668E002621A8 = {
@@ -621,6 +688,7 @@
 				0318702922D73098003FC173 /* Dice */,
 				0310B1A0221AC069003BCA03 /* TestViewController.m */,
 				0310B19F221AC069003BCA03 /* TestViewController.h */,
+				03218E7F22E549C300F3068C /* PartTimeJob */,
 				0306FD1E226D8CFF004B0198 /* StartTask.plist */,
 				0321AE8D219D668E002621A8 /* ViewController.h */,
 				0321AE8E219D668E002621A8 /* ViewController.m */,
@@ -1240,6 +1308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03218E8222E549EE00F3068C /* PartTimeViewController.m in Sources */,
 				034F7B94229B7B1A00740AFF /* TowerViewController.m in Sources */,
 				034F7C62229B84AE00740AFF /* NoonState.m in Sources */,
 				035E37A522B7830500CD99DE /* AutoReleasePoolOperation.m in Sources */,
@@ -1261,6 +1330,7 @@
 				034F7C3F229B84AE00740AFF /* Proxy.m in Sources */,
 				034F7C37229B84AE00740AFF /* User.m in Sources */,
 				034F7C6B229B84AE00740AFF /* OperationMul.m in Sources */,
+				03218E9622E8568900F3068C /* SubCompanyManager.m in Sources */,
 				03F2EE1D21FFF5EF00D03703 /* ConstractFactoryA.m in Sources */,
 				035E37DC22B8BA2700CD99DE /* BaseTableViewCell.swift in Sources */,
 				034F7C67229B84AE00740AFF /* EveningState.m in Sources */,
@@ -1278,12 +1348,16 @@
 				034F7C5C229B84AE00740AFF /* TestPaper.m in Sources */,
 				034F7C3E229B84AE00740AFF /* SqlServerFactory.m in Sources */,
 				034F7C5E229B84AE00740AFF /* CashReturn.m in Sources */,
+				03DE7CC622EEF76A0031D30D /* IndexTool.m in Sources */,
+				03218E9322E8563200F3068C /* SubEmployee.m in Sources */,
 				03862E3D2296750600CE815A /* GloableOperation.m in Sources */,
 				034F7C36229B84AE00740AFF /* AccessFactory.m in Sources */,
 				0318703E22D825CF003FC173 /* DiceTerm.m in Sources */,
 				034F7C44229B84AE00740AFF /* Resume.m in Sources */,
 				034F7C4C229B84AE00740AFF /* Realty1.m in Sources */,
 				035E37DA22B8BA2700CD99DE /* ListViewController.swift in Sources */,
+				035740F322DC143A00960B45 /* DiceWebViewController.m in Sources */,
+				03218E9922E858EF00F3068C /* CompanyManager.m in Sources */,
 				034F7C68229B84AE00740AFF /* OperationDiv.m in Sources */,
 				03862E4022967ACD00CE815A /* CustomOperation.m in Sources */,
 				0318703822D73C7B003FC173 /* DiceOperation.m in Sources */,
@@ -1312,6 +1386,7 @@
 				034F7B93229B7B1A00740AFF /* DiskView.m in Sources */,
 				034F7C63229B84AE00740AFF /* AfternoonState.m in Sources */,
 				0306FD27226D8F14004B0198 /* WCAbstractTask.m in Sources */,
+				03DE7CC322EEF41C0031D30D /* Multiple.m in Sources */,
 				034F7C54229B84AE00740AFF /* ObserverM.m in Sources */,
 				034F7C4A229B84AE00740AFF /* Fund.m in Sources */,
 				034F7C6C229B84AE00740AFF /* OperationSub.m in Sources */,
@@ -1331,6 +1406,7 @@
 				03EF80A92266C10A005EB4DE /* CustomView.m in Sources */,
 				034F7C56229B84AE00740AFF /* NBAObserver.m in Sources */,
 				035E37DD22B8BA2700CD99DE /* ListTableViewCell.swift in Sources */,
+				03218E8522E54AFA00F3068C /* PartTimeOperation.m in Sources */,
 				034F7C3C229B84AE00740AFF /* DataAccess.m in Sources */,
 				034F7C38229B84AE00740AFF /* AccessDepartment.m in Sources */,
 				034F7C3A229B84AE00740AFF /* SqlserverUser.m in Sources */,
@@ -1347,6 +1423,7 @@
 				03F2EE0E21FF096300D03703 /* Gasoline90.m in Sources */,
 				0318702C22D730D4003FC173 /* DiceM.m in Sources */,
 				0329718422A4BB30004CD8A2 /* CarDirect.m in Sources */,
+				03DE7CC022EEE4620031D30D /* DiceStrategy.m in Sources */,
 				0310B1A1221AC069003BCA03 /* TestViewController.m in Sources */,
 				035E376E22B370AF00CD99DE /* AutoRealsePool.m in Sources */,
 				034F7C72229B84AE00740AFF /* VolunteerFactory.m in Sources */,
@@ -1360,10 +1437,13 @@
 				034F7C74229B84AE00740AFF /* ConcreteComponent.m in Sources */,
 				0318703222D7369A003FC173 /* DiceSingle.m in Sources */,
 				034F7C70229B84AE00740AFF /* UndergraduateFactory.m in Sources */,
+				03218E8822E5576E00F3068C /* PartTimeModel.m in Sources */,
 				03F2EE0A21FF058900D03703 /* Car2.m in Sources */,
+				03218E9022E855D000F3068C /* Employee.m in Sources */,
 				034F7C52229B84AE00740AFF /* Secretary.m in Sources */,
 				034F7C4F229B84AE00740AFF /* Stock2.m in Sources */,
 				034F7C6F229B84AE00740AFF /* LeiFeng.m in Sources */,
+				03218E8C22E59CB500F3068C /* FiveMTest.m in Sources */,
 				034F7C6E229B84AE00740AFF /* Undergradute.m in Sources */,
 				0321AE8C219D668E002621A8 /* AppDelegate.m in Sources */,
 				03862E512296963E00CE815A /* CoreAnimationOperation.m in Sources */,

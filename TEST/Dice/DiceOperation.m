@@ -8,18 +8,34 @@
 
 #import "DiceOperation.h"
 #import "DiceViewController.h"
+#import "DiceWebViewController.h"
+
 @implementation DiceOperation
 - (NSString *)operationTitle {
     return  @"投骰子演示";
 }
 - (NSArray<NSString *> *)operations {
-    return  @[@"Dice"];
+    return  @[@"Dice",@"DiceWeb"];
 }
 
 - (void)operationTarget:(id)target WithIndex:(NSInteger)index {
 
-    UIViewController *targetCtr = (UIViewController *)target;
-    DiceViewController *controller = [[DiceViewController alloc] init];
-    [targetCtr.navigationController pushViewController:controller animated:YES];
+    switch (index) {
+        case 0:{
+            UIViewController *targetCtr = (UIViewController *)target;
+            DiceViewController *controller = [[DiceViewController alloc] init];
+            [targetCtr.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 1:{
+            UIViewController *targetCtr = (UIViewController *)target;
+            DiceWebViewController *controller = [[DiceWebViewController alloc] init];
+            [targetCtr.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+
 }
 @end

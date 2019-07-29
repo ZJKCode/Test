@@ -24,6 +24,8 @@
     }
 
 }
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     printf("sizeof : int = %lu, long = %lu, long long = %lu\n", sizeof(int), sizeof(long), sizeof(long long));
