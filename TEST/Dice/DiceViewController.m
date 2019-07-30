@@ -14,6 +14,10 @@
 #import "Multiple.h"
 #import "IndexTool.h"
 
+
+#define   kScreenHEIGHT      [UIScreen mainScreen].bounds.size.height
+
+
 /// 最大倍投数目
 
 /// 交替
@@ -67,6 +71,10 @@ static NSInteger count = 1;
 @property (nonatomic, strong) NSMutableArray *shunlongMarray;
 @property (nonatomic, strong) NSMutableArray *zhanlongMarray;
 
+@property (nonatomic, strong) NSMutableArray *sections;
+
+@property (nonatomic, strong) UITableView *mutaTableView;
+
 
 @end
 
@@ -78,6 +86,11 @@ static NSInteger count = 1;
     _alternateMarray = [NSMutableArray array];
     _shunlongMarray = [NSMutableArray array];
     _zhanlongMarray = [NSMutableArray array];
+    _sections = [NSMutableArray array];
+
+    [_sections addObject:_alternateMarray];
+    [_sections addObject:_shunlongMarray];
+    [_sections addObject:_zhanlongMarray];
 
     CGFloat buttonWidth = UIScreen.mainScreen.bounds.size.width/8;
     self.title = @"哈哈哈测试动画";
@@ -131,7 +144,7 @@ static NSInteger count = 1;
     [self.view addSubview:_textField1];
     [self.view addSubview:_textField2];
 
-    _infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(_textField2.frame), UIScreen.mainScreen.bounds.size.width, 40)];
+    _infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(_textField2.frame) + 5, UIScreen.mainScreen.bounds.size.width, 40-5)];
     _infoLabel.backgroundColor = [UIColor whiteColor];
     _infoLabel.textColor = [UIColor redColor];
     _infoLabel.textAlignment = NSTextAlignmentCenter;
@@ -139,6 +152,7 @@ static NSInteger count = 1;
     [self.view addSubview:_infoLabel];
 
     [self.view addSubview:self.tableView];
+    [self.view addSubview:self.mutaTableView];
     for (int i = 0; i < 50; i ++) {
         DiceModel *model = [[DiceM shareInstance] getRandomDice];
         [self.list addObject:model];
@@ -206,7 +220,7 @@ static NSInteger count = 1;
     }
     NSInteger index = [IndexTool indexOfArrayForCount:alternateCount];
     NSInteger arrayCount = [_alternateMarray count];
-    if (index==arrayCount) {
+    if (index >= arrayCount) {
         // 创建
         Multiple *mut = [[Multiple alloc] init];
         mut.multiple = alternateCount;
@@ -217,6 +231,8 @@ static NSInteger count = 1;
         Multiple *mutiple = [_alternateMarray objectAtIndex:index];
         mutiple.times = mutiple.times + 1;
     }
+
+    _sections[0] = _alternateMarray;
 
 
 
@@ -239,15 +255,6 @@ static NSInteger count = 1;
 /// 顺龙策略
 - (void)shunlongStrategy {
 
-    NSInteger index;
-    // 首先计算当前倍数是否在数组中
-    if (shunlongCount == 1) {
-        index = 0;
-    } else if (shunlongCount == 3){
-        index = 1;
-    } else {
-
-    }
 
     if ([_lastDice.size isEqualToString:self.shunlongLast] ) {
         // 相等则处理为
@@ -261,6 +268,22 @@ static NSInteger count = 1;
         }
         self.shunlongLast = _lastDice.size;
     }
+    NSInteger index = [IndexTool indexOfArrayForCount:shunlongCount];
+    NSInteger arrayCount = [_shunlongMarray count];
+    if (index >= arrayCount) {
+        // 创建
+        Multiple *mut = [[Multiple alloc] init];
+        mut.multiple = shunlongCount;
+        mut.times = mut.times + 1;
+        [_shunlongMarray addObject:mut];
+    } else {
+        //
+        Multiple *mutiple = [_shunlongMarray objectAtIndex:index];
+        mutiple.times = mutiple.times + 1;
+    }
+
+    _sections[1] = _shunlongMarray;
+
 
     NSLog(@"顺龙交替执行的次数为： %ld", shunlongCount);
     if (shunlongCount > shunlongMaxCount) {
@@ -286,6 +309,21 @@ static NSInteger count = 1;
     } else {
         self.zhanlongLast = @"大";
     }
+    NSInteger index = [IndexTool indexOfArrayForCount:zhanlongCount];
+    NSInteger arrayCount = [_zhanlongMarray count];
+    if (index >= arrayCount) {
+        // 创建
+        Multiple *mut = [[Multiple alloc] init];
+        mut.multiple = zhanlongCount;
+        mut.times = mut.times + 1;
+        [_zhanlongMarray addObject:mut];
+    } else {
+        //
+        Multiple *mutiple = [_zhanlongMarray objectAtIndex:index];
+        mutiple.times = mutiple.times + 1;
+    }
+
+    _sections[2] = _zhanlongMarray;
 
     NSLog(@"斩龙执行的次数： %ld", zhanlongCount);
     if (zhanlongCount > zhanlongMaxCount) {
@@ -326,13 +364,61 @@ static NSInteger count = 1;
                         self.infoLabel.text =[NSString stringWithFormat:@"%d : 交-%ld(%ld) 顺-%ld(%ld) 斩-%ld(%ld)",count, alternateCount, alternateMaxCount, shunlongCount, shunlongMaxCount, zhanlongCount, zhanlongMaxCount];
                     } completion:nil];
 
-}
+    [self.mutaTableView reloadData];
 
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (tableView == self.mutaTableView) {
+        return self.sections.count;
+    }
+
+    return 1;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (tableView == self.mutaTableView) {
+        return [self.sections[section] count];
+    }
     return self.list.count;
+}
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (tableView == self.mutaTableView) {
+        switch (section) {
+            case 0:
+                return @"交替策略";
+                break;
+            case 1:
+                return @"顺龙策略";
+                break;
+            case 2:
+                return @"斩龙策略";
+                break;
+            default:
+                break;
+        }
+    }
+    return @"随机大小";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == self.mutaTableView) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rowCell"];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"rowCell"];
+        }
+        NSArray *array = self.sections[indexPath.section];
+
+        Multiple *muti = array[indexPath.row];
+
+//        cell.textLabel.text = [NSString stringWithFormat:@"倍数：%ld   |||   次数: %ld",muti.multiple, muti.times];
+        [UIView transitionWithView:cell.textLabel
+                          duration:0.25f
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            cell.textLabel.text = [NSString stringWithFormat:@"倍数：%ld   |||   次数: %ld",muti.multiple, muti.times];
+
+                        } completion:nil];
+        return cell;
+    }
     DiceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"diceCell"];
     if (cell == nil) {
         cell = [[DiceTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"diceCell"];
@@ -355,7 +441,7 @@ static NSInteger count = 1;
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 220, [UIScreen mainScreen].bounds.size.width, UIScreen.mainScreen.bounds.size.height - 160) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kScreenHEIGHT - 160, [UIScreen mainScreen].bounds.size.width, 150) style:UITableViewStylePlain];
 
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -364,6 +450,16 @@ static NSInteger count = 1;
     return _tableView;
 }
 
+- (UITableView *)mutaTableView {
+    if (!_mutaTableView) {
+        _mutaTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 220, [UIScreen mainScreen].bounds.size.width, UIScreen.mainScreen.bounds.size.height - 390) style:UITableViewStylePlain];
+
+        _mutaTableView.delegate = self;
+        _mutaTableView.dataSource = self;
+        _mutaTableView.showsVerticalScrollIndicator = YES;
+    }
+    return _mutaTableView;
+}
 - (NSMutableArray *)list {
     if (_list == nil) {
         _list = [NSMutableArray array];
