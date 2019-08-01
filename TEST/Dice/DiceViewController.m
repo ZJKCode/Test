@@ -16,8 +16,8 @@
 
 
 #define   kScreenHEIGHT      [UIScreen mainScreen].bounds.size.height
-
-
+#define kScreenWidth  UIScreen.mainScreen.bounds.size.width
+#define buttonWidth UIScreen.mainScreen.bounds.size.width/4
 /// 最大倍投数目
 
 /// 交替
@@ -75,100 +75,119 @@ static NSInteger count = 1;
 
 @property (nonatomic, strong) UITableView *mutaTableView;
 
+@property (nonatomic, strong) NSTimer *timer;
+
 
 @end
 
 @implementation DiceViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _alternateMarray = [NSMutableArray array];
+        _shunlongMarray = [NSMutableArray array];
+        _zhanlongMarray = [NSMutableArray array];
+        _sections = [NSMutableArray array];
+
+        [_sections addObject:_alternateMarray];
+        [_sections addObject:_shunlongMarray];
+        [_sections addObject:_zhanlongMarray];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _alternateMarray = [NSMutableArray array];
-    _shunlongMarray = [NSMutableArray array];
-    _zhanlongMarray = [NSMutableArray array];
-    _sections = [NSMutableArray array];
+    self.title = @"骰子游戏模拟";
 
-    [_sections addObject:_alternateMarray];
-    [_sections addObject:_shunlongMarray];
-    [_sections addObject:_zhanlongMarray];
+    [self addSubViews];
 
-    CGFloat buttonWidth = UIScreen.mainScreen.bounds.size.width/8;
-    self.title = @"哈哈哈测试动画";
+    [self setData];
+
+}
+
+- (UIButton *)randomButtonWithTitle:(NSString *)title action:(SEL)selector {
     UIButton *randomDiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
     randomDiceButton.backgroundColor = [UIColor greenColor];
     [randomDiceButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [randomDiceButton setTitle:@"随机投掷" forState:UIControlStateNormal];
-    [randomDiceButton addTarget:self action:@selector(insertRandomDice) forControlEvents:UIControlEventTouchUpInside];
-    randomDiceButton.frame = CGRectMake(0, 60, buttonWidth * 2, 60);
+    [randomDiceButton setTitle:title forState:UIControlStateNormal];
+    [randomDiceButton addTarget:self
+                         action:selector
+               forControlEvents:UIControlEventTouchUpInside];
+    randomDiceButton.layer.cornerRadius = 10;
+    randomDiceButton.layer.masksToBounds = YES;
+    return randomDiceButton;
+
+}
+
+- (void)addSubViews {
+
+    UIButton *randomDiceButton = [self randomButtonWithTitle:@"随机投掷" action:@selector(insertRandomDice)];
+    randomDiceButton.frame = CGRectMake(10, 63, buttonWidth * 2-20, 60);
     [self.view addSubview:randomDiceButton];
 
-    UIButton *bigDiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    bigDiceButton.backgroundColor = [UIColor blueColor];
-    [bigDiceButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [bigDiceButton setTitle:@"大" forState:UIControlStateNormal];
-    [bigDiceButton addTarget:self action:@selector(insertBigDice) forControlEvents:UIControlEventTouchUpInside];
-    bigDiceButton.frame = CGRectMake(buttonWidth * 2, 60, buttonWidth, 60);
+    UIButton *bigDiceButton = [self randomButtonWithTitle:@"大" action:@selector(insertBigDice)];
+    bigDiceButton.frame = CGRectMake(buttonWidth * 2, 63, buttonWidth-10, 60);
     [self.view addSubview:bigDiceButton];
 
-
-    UIButton *smallDiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    smallDiceButton.backgroundColor = [UIColor yellowColor];
-    [smallDiceButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [smallDiceButton setTitle:@"小" forState:UIControlStateNormal];
-    [smallDiceButton addTarget:self action:@selector(insertSmallDice) forControlEvents:UIControlEventTouchUpInside];
-    smallDiceButton.frame = CGRectMake(buttonWidth * 3, 60, buttonWidth, 60);
+    UIButton *smallDiceButton = [self randomButtonWithTitle:@"小" action:@selector(insertSmallDice)];
+    smallDiceButton.frame = CGRectMake(buttonWidth * 3, 63, buttonWidth-10, 60);
     [self.view addSubview:smallDiceButton];
 
-    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(10,120+7.5, 20, 45)];
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(10,120+7.5, 30, 45)];
     label1.text = @"大";
+    label1.textAlignment = NSTextAlignmentCenter;
+    label1.layer.cornerRadius = 10;
+    label1.layer.masksToBounds = YES;
     label1.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:label1];
-    _textField1 = [[UITextField alloc] initWithFrame:CGRectMake(35, 120+7.5, buttonWidth * 4-30-35, 45)];
-    _textField1.placeholder = @"预测 和 为 大金额";
-    _textField1.borderStyle = UITextBorderStyleRoundedRect;
-    _textField1.backgroundColor = [UIColor whiteColor];
-    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(buttonWidth * 4 + 10,120+7.5, 20, 45)];
+
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(buttonWidth * 2,120+7.5, 30, 45)];
     label2.text = @"小";
+    label2.layer.cornerRadius = 10;
+    label2.layer.masksToBounds = YES;
+    label2.textAlignment = NSTextAlignmentCenter;
     label2.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:label2];
 
-    _textField2 = [[UITextField alloc] initWithFrame:CGRectMake(buttonWidth *4+15+15, 120+7.5, buttonWidth * 4-30-35, 45)];
-    _textField2.placeholder = @"预测 和 为 小 金额";
-    _textField2.backgroundColor = [UIColor whiteColor];
-    _textField2.borderStyle = UITextBorderStyleRoundedRect;
-
-
-
-    // 如何拿到数据呢？
-
-    [self.view addSubview:_textField1];
-    [self.view addSubview:_textField2];
-
-    _infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(_textField2.frame) + 5, UIScreen.mainScreen.bounds.size.width, 40-5)];
-    _infoLabel.backgroundColor = [UIColor whiteColor];
-    _infoLabel.textColor = [UIColor redColor];
-    _infoLabel.textAlignment = NSTextAlignmentCenter;
-
-    [self.view addSubview:_infoLabel];
-
+    [self.view addSubview:self.textField1];
+    [self.view addSubview:self.textField2];
+    [self.view addSubview:self.infoLabel];
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.mutaTableView];
+
+}
+
+- (void)setData {
+
     for (int i = 0; i < 50; i ++) {
         DiceModel *model = [[DiceM shareInstance] getRandomDice];
         [self.list addObject:model];
     }
+
     [self.list sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return NSOrderedDescending;
     }];
 
-
     [self.tableView reloadData];
+    [self runRandomJobs];
 
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.3 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        [self insertRandomDice];
-    }];
 }
 
+- (void)runRandomJobs {
+
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.3
+                                                     repeats:YES
+                                                       block:^(NSTimer * _Nonnull timer) {
+                                                           [self insertRandomDice];
+                                                       }];
+
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+
+}
 - (void)insertBigDice {
 
     DiceModel *model = [[DiceM shareInstance] getSumBigDice];
@@ -409,12 +428,11 @@ static NSInteger count = 1;
 
         Multiple *muti = array[indexPath.row];
 
-//        cell.textLabel.text = [NSString stringWithFormat:@"倍数：%ld   |||   次数: %ld",muti.multiple, muti.times];
         [UIView transitionWithView:cell.textLabel
                           duration:0.25f
                            options:UIViewAnimationOptionTransitionCrossDissolve
                         animations:^{
-                            cell.textLabel.text = [NSString stringWithFormat:@"倍数：%ld   |||   次数: %ld",muti.multiple, muti.times];
+                            cell.textLabel.text = [NSString stringWithFormat:@"倍数：%ld ------------- 出现次数: %ld",muti.multiple, muti.times];
 
                         } completion:nil];
         return cell;
@@ -460,6 +478,28 @@ static NSInteger count = 1;
     }
     return _mutaTableView;
 }
+
+- (UITextField *)textField1 {
+    if (!_textField1) {
+        _textField1 = [[UITextField alloc] initWithFrame:CGRectMake(45, 120+7.5, buttonWidth * 2-55, 45)];
+        _textField1.placeholder = @"请输入投注金额";
+        _textField1.borderStyle = UITextBorderStyleRoundedRect;
+        _textField1.backgroundColor = [UIColor whiteColor];
+    }
+    return _textField1;
+}
+
+- (UITextField *)textField2 {
+    if (!_textField2) {
+
+        _textField2 = [[UITextField alloc] initWithFrame:CGRectMake(buttonWidth *2+35, 120+7.5, buttonWidth * 2-50, 45)];
+        _textField2.placeholder = @"请输入投注金额";
+        _textField2.backgroundColor = [UIColor whiteColor];
+        _textField2.borderStyle = UITextBorderStyleRoundedRect;
+    }
+
+    return _textField2;
+}
 - (NSMutableArray *)list {
     if (_list == nil) {
         _list = [NSMutableArray array];
@@ -478,5 +518,19 @@ static NSInteger count = 1;
 - (NSString *)zhanlongLast {
     return @"小";
 }
+- (UILabel *)infoLabel {
+    if (_infoLabel == nil) {
+        _infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(self.textField2.frame) + 5,kScreenWidth, 40-5)];
+        _infoLabel.backgroundColor = [UIColor whiteColor];
+        _infoLabel.textColor = [UIColor redColor];
+        _infoLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    return _infoLabel;
+}
 
+
+- (void)dealloc {
+    [_timer invalidate];
+    _timer = nil;
+}
 @end
